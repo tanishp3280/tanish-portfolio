@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {corr,quantile,bs,seeded,cholesky} from '../public/quant-lab/math.js';
+assert.equal(corr([1,2,3],[1,2,3]),1);
+assert.equal(corr([1,2,3],[3,2,1]),-1);
+assert.equal(corr([1,1,1],[1,2,3]),0);
+assert.equal(quantile([10,20,30,40],.5),25);
+assert.equal(quantile([10,20,30,40],.25),17.5);
+assert.equal(quantile([10,20,30,40],1),40);
+assert.equal(quantile([10,20,30,40],0),10);
+assert.ok(Math.abs(bs(100,100,1,.05,.2)-10.4506)<.001);
+assert.ok(Math.abs(bs(100,100,1,.05,.2)-bs(100,100,1,.05,.2,false)-(100-100*Math.exp(-.05)))<1e-6);
+const a=seeded(42),b=seeded(42);assert.deepEqual(Array.from({length:20},a),Array.from({length:20},b));
+const L=cholesky([[4,2],[2,3]]);assert.ok(Math.abs(L[1][0]**2+L[1][1]**2-3)<1e-9);
+console.log('11 mathematical invariants passed: correlation, quantiles, option parity, deterministic sampling, Cholesky.');

@@ -1,0 +1,7 @@
+'use client';
+import {useEffect,useRef,useState} from 'react';
+import * as T from 'three';
+import {createMomo} from './MomoRig';
+import {cityDirector,sequences} from '@/lib/city/director';
+import {onFrame,runtime} from '@/lib/spatial';
+export default function MomoPortrait({action}:{action:string}){const host=useRef<HTMLSpanElement>(null),pose=useRef(action),[ready,setReady]=useState(false);pose.current=action;useEffect(()=>{const el=host.current!;let renderer:T.WebGLRenderer;try{renderer=new T.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'})}catch{return}renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.setSize(150,170);el.appendChild(renderer.domElement);const scene=new T.Scene(),camera=new T.PerspectiveCamera(30,150/170,.1,20);camera.position.set(0,1,4.5);camera.lookAt(0,.9,0);scene.add(new T.HemisphereLight(0xfff9ef,0x65806d,2));const light=new T.DirectionalLight(0xffe4e7,2);light.position.set(2,4,3);scene.add(light);const momo=createMomo();scene.add(momo.root);let t=0;const stop=onFrame(dt=>{if(document.hidden)return;t+=dt;const d=cityDirector.get();momo.update(d.sequence?d.progress*sequences[d.sequence].duration:t,pose.current==='sleep'?'sleepy':d.emotion,pose.current,runtime.reduced);renderer.render(scene,camera)});setReady(true);return()=>{stop();momo.dispose();renderer.dispose();renderer.forceContextLoss();renderer.domElement.remove()}},[]);return <span className="momo-portrait" data-ready={ready} ref={host} aria-hidden="true"/>}

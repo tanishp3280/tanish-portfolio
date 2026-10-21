@@ -1,0 +1,2 @@
+import {catalog} from '@/lib/catalog';
+export function GET(request:Request){const q=new URL(request.url).searchParams.get('q')?.toLowerCase()||'';return Response.json({source:'Tanish Patil portfolio',count:catalog.filter(p=>(p.title+' '+p.description).toLowerCase().includes(q)).length,projects:catalog.filter(p=>(p.title+' '+p.description).toLowerCase().includes(q))},{headers:{'Cache-Control':'public, max-age=300'}})}

@@ -1,0 +1,10 @@
+import * as T from 'three';
+/** Bounded, actual volume sampling in a few local fog banks, not a fullscreen postprocess. */
+export function addMountainAtmospherics(scene:T.Scene){
+ const uniform={uTime:{value:0},uCamera:{value:new T.Vector3()}};
+ const material=new T.ShaderMaterial({transparent:true,depthWrite:false,side:T.BackSide,uniforms:uniform,vertexShader:`varying vec3 vWorld;void main(){vec4 p=modelMatrix*vec4(position,1.);vWorld=p.xyz;gl_Position=projectionMatrix*viewMatrix*p;}`,fragmentShader:`precision mediump float;varying vec3 vWorld;uniform vec3 uCamera;uniform float uTime;float noise(vec3 p){return sin(p.x*.43+uTime*.06)*sin(p.z*.39-uTime*.04)*.5+.5;}void main(){vec3 ray=normalize(vWorld-uCamera);float density=0.;for(int i=0;i<12;i++){vec3 p=vWorld-ray*float(i)*.55;float bands=pow(max(0.,sin(p.y*.47)),6.);density+=noise(p)*bands*.012;}gl_FragColor=vec4(.97,.98,.94,min(.24,density));}`});
+ const banks=new T.Group();scene.add(banks);for(let i=0;i<4;i++){const b=new T.Mesh(new T.BoxGeometry(28,4,22),material);b.position.set(Math.sin(i*2)*20,7+i*11,Math.cos(i*2)*20);banks.add(b)}
+ const dustGeo=new T.BufferGeometry();const xyz=Array.from({length:60},(_,i)=>[Math.sin(i*2.4)*35,i%50,Math.cos(i*1.7)*35]).flat();dustGeo.setAttribute('position',new T.Float32BufferAttribute(xyz,3));const dust=new T.Points(dustGeo,new T.PointsMaterial({color:0xe9d6a8,size:.07,transparent:true,opacity:.35,depthWrite:false}));scene.add(dust);
+ const moon=new T.Mesh(new T.SphereGeometry(2.6,24,16),new T.MeshBasicMaterial({color:0xf9f5df,transparent:true,opacity:.8}));moon.position.set(-15,70,-45);scene.add(moon);
+ return {update(t:number,camera:T.Camera,progress:number){uniform.uTime.value=t;uniform.uCamera.value.copy(camera.position);dust.rotation.y=t*.008;moon.visible=progress>.65;banks.visible=innerWidth>700;},dispose(){material.dispose();dustGeo.dispose();(dust.material as T.Material).dispose();moon.geometry.dispose();(moon.material as T.Material).dispose();banks.children.forEach(o=>(o as T.Mesh).geometry.dispose());banks.removeFromParent();dust.removeFromParent();moon.removeFromParent()}};
+}

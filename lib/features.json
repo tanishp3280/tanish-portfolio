@@ -1,0 +1,2753 @@
+[
+  {
+    "id": 0,
+    "name": "Cinematic loading screen with your name/logo",
+    "route": "/",
+    "note": "Session-based TP cinematic intro with staged title and progress line.",
+    "status": "Implemented"
+  },
+  {
+    "id": 1,
+    "name": "Custom cursor that changes on hover",
+    "route": "/",
+    "note": "Pointer ring expands over links and controls; disabled for coarse pointers.",
+    "status": "Implemented"
+  },
+  {
+    "id": 2,
+    "name": "Magnetic buttons that slightly pull toward the cursor",
+    "route": "/",
+    "note": "Pointer-relative translation on marked navigation and calls to action.",
+    "status": "Implemented"
+  },
+  {
+    "id": 3,
+    "name": "Cursor-following glow/light effect",
+    "route": "/",
+    "note": "Low-opacity radial cursor light.",
+    "status": "Implemented"
+  },
+  {
+    "id": 4,
+    "name": "Cursor trail particles",
+    "route": "/",
+    "note": "Fading canvas particles follow pointer movement.",
+    "status": "Implemented"
+  },
+  {
+    "id": 5,
+    "name": "Hover distortion effects on project images",
+    "route": "/#work",
+    "note": "Image scale, skew and color distortion on hover.",
+    "status": "Adapted"
+  },
+  {
+    "id": 6,
+    "name": "Smooth scroll with momentum",
+    "route": "/",
+    "note": "Lenis momentum scrolling; bypassed for controls and reduced motion.",
+    "status": "Implemented"
+  },
+  {
+    "id": 7,
+    "name": "Scroll progress indicator",
+    "route": "/",
+    "note": "Page progress bar updates while scrolling, including reduced-motion mode.",
+    "status": "Implemented"
+  },
+  {
+    "id": 8,
+    "name": "Scroll-triggered fade-ins",
+    "route": "/",
+    "note": "IntersectionObserver fade-up reveals.",
+    "status": "Implemented"
+  },
+  {
+    "id": 9,
+    "name": "Scroll-triggered text reveals",
+    "route": "/",
+    "note": "Scroll-scrubbed word reveals in the introductory band.",
+    "status": "Implemented"
+  },
+  {
+    "id": 10,
+    "name": "Scroll-triggered image reveals",
+    "route": "/#work",
+    "note": "GSAP clipping and scale reveals on project art.",
+    "status": "Implemented"
+  },
+  {
+    "id": 11,
+    "name": "Parallax scrolling",
+    "route": "/",
+    "note": "Parallax on story objects and the lab illustration.",
+    "status": "Implemented"
+  },
+  {
+    "id": 12,
+    "name": "Horizontal scrolling sections",
+    "route": "/#journey",
+    "note": "Desktop scroll-pinned horizontal story rail; swipeable on mobile.",
+    "status": "Implemented"
+  },
+  {
+    "id": 13,
+    "name": "Scroll-controlled animations",
+    "route": "/",
+    "note": "ScrollTrigger scrubs typography, images and section transitions.",
+    "status": "Implemented"
+  },
+  {
+    "id": 14,
+    "name": "Scroll-controlled 3D objects",
+    "route": "/keyboard",
+    "note": "Keyboard orientation responds to scroll and section stage.",
+    "status": "Implemented"
+  },
+  {
+    "id": 15,
+    "name": "Scroll-controlled timeline",
+    "route": "/journey",
+    "note": "Vertical journey tracks visible milestones with an active year and progress line.",
+    "status": "Implemented"
+  },
+  {
+    "id": 16,
+    "name": "Scroll snapping between major sections",
+    "route": "/",
+    "note": "Optional section snapping in the navigation menu; enabled by the visitor.",
+    "status": "Implemented"
+  },
+  {
+    "id": 17,
+    "name": "Sticky sections that transform while scrolling",
+    "route": "/#journey",
+    "note": "Pinned desktop story rail; sticky keyboard and journey panels.",
+    "status": "Implemented"
+  },
+  {
+    "id": 18,
+    "name": "Sections that expand as you scroll",
+    "route": "/#world",
+    "note": "World frame scales up and its corner radius contracts as it enters.",
+    "status": "Implemented"
+  },
+  {
+    "id": 19,
+    "name": "Background transitions between sections",
+    "route": "/",
+    "note": "Intro band background transitions from dark to lime while scrolling.",
+    "status": "Implemented"
+  },
+  {
+    "id": 20,
+    "name": "Color-theme transitions while scrolling",
+    "route": "/",
+    "note": "Scroll-led dark-to-lime section theme transition; global light/dark control too.",
+    "status": "Implemented"
+  },
+  {
+    "id": 21,
+    "name": "Text color transitions based on background",
+    "route": "/",
+    "note": "Intro text transitions to dark as its background becomes lime.",
+    "status": "Implemented"
+  },
+  {
+    "id": 22,
+    "name": "Full-screen hero animation",
+    "route": "/",
+    "note": "Full-viewport composition with WebGL light, title entrance and 3D keyboard.",
+    "status": "Implemented"
+  },
+  {
+    "id": 23,
+    "name": "Animated introduction of your name",
+    "route": "/",
+    "note": "Staggered first/last-name reveal.",
+    "status": "Implemented"
+  },
+  {
+    "id": 24,
+    "name": "Letter-by-letter name animation",
+    "route": "/",
+    "note": "Individual letter animation with staggered delays.",
+    "status": "Implemented"
+  },
+  {
+    "id": 25,
+    "name": "Scramble-text effect",
+    "route": "/effects",
+    "note": "Hover/focus scramble text and a homepage scramble heading.",
+    "status": "Implemented"
+  },
+  {
+    "id": 26,
+    "name": "Typewriter animation",
+    "route": "/",
+    "note": "Typewriter sentence at the hero footer.",
+    "status": "Implemented"
+  },
+  {
+    "id": 27,
+    "name": "Rotating words under your name like Developer \u2192 Quant \u2192 Researcher \u2192 Leader",
+    "route": "/",
+    "note": "Developer, Quant thinker, Researcher and Leader rotate beneath the name.",
+    "status": "Implemented"
+  },
+  {
+    "id": 28,
+    "name": "Animated gradient text",
+    "route": "/effects",
+    "note": "Animated multicolor gradient lettering.",
+    "status": "Implemented"
+  },
+  {
+    "id": 29,
+    "name": "Oversized typography",
+    "route": "/",
+    "note": "Large fluid display typography across the site.",
+    "status": "Implemented"
+  },
+  {
+    "id": 30,
+    "name": "Text that moves at different speeds while scrolling",
+    "route": "/",
+    "note": "Parallax and pinned horizontal story text move at different scroll rates.",
+    "status": "Adapted"
+  },
+  {
+    "id": 31,
+    "name": "Text that stretches/distorts on scroll",
+    "route": "/#research",
+    "note": "Scroll-scrubbed horizontal text stretch on the lab heading.",
+    "status": "Implemented"
+  },
+  {
+    "id": 32,
+    "name": "Text masking with video/images",
+    "route": "/effects",
+    "note": "Curiosity lettering masks the generated finance image.",
+    "status": "Implemented"
+  },
+  {
+    "id": 33,
+    "name": "Kinetic typography",
+    "route": "/effects",
+    "note": "Animated BUILD / LEARN / REPEAT lettering.",
+    "status": "Implemented"
+  },
+  {
+    "id": 34,
+    "name": "Interactive 3D version of your initials",
+    "route": "/world?mode=initials",
+    "note": "Orbitable three-dimensional TP sculpture.",
+    "status": "Implemented"
+  },
+  {
+    "id": 35,
+    "name": "3D globe showing where your work/projects have reached",
+    "route": "/world?mode=globe",
+    "note": "Globe with North Carolina and New York connections from supplied experience. Not a fabricated user-reach map.",
+    "status": "Adapted"
+  },
+  {
+    "id": 36,
+    "name": "3D floating project cards",
+    "route": "/world?mode=cards",
+    "note": "Floating, orbitable project slabs with selectable labels.",
+    "status": "Implemented"
+  },
+  {
+    "id": 37,
+    "name": "3D laptop displaying your projects",
+    "route": "/world?mode=desk",
+    "note": "Laptop screen displays actual selected project titles; selecting opens the project index.",
+    "status": "Implemented"
+  },
+  {
+    "id": 38,
+    "name": "Interactive 3D desk/workspace",
+    "route": "/world?mode=desk",
+    "note": "Orbitable desk with laptop, notes and movable objects.",
+    "status": "Implemented"
+  },
+  {
+    "id": 39,
+    "name": "3D trophy/award gallery",
+    "route": "/world?mode=awards",
+    "note": "Six selectable trophy objects, linked to documented recognition.",
+    "status": "Implemented"
+  },
+  {
+    "id": 40,
+    "name": "3D skill constellation",
+    "route": "/world?mode=galaxy",
+    "note": "Three-dimensional skill nodes and connections.",
+    "status": "Implemented"
+  },
+  {
+    "id": 41,
+    "name": "3D network connecting your experiences",
+    "route": "/world?mode=network",
+    "note": "Experience nodes form an explorable network.",
+    "status": "Implemented"
+  },
+  {
+    "id": 42,
+    "name": "3D timeline",
+    "route": "/world?mode=timeline",
+    "note": "Three-dimensional milestone timeline.",
+    "status": "Implemented"
+  },
+  {
+    "id": 43,
+    "name": "3D particles reacting to cursor movement",
+    "route": "/world?mode=galaxy",
+    "note": "Depth-distributed WebGL points respond to the pointer with repulsion.",
+    "status": "Implemented"
+  },
+  {
+    "id": 44,
+    "name": "WebGL background",
+    "route": "/",
+    "note": "Custom WebGL shader background behind the hero.",
+    "status": "Implemented"
+  },
+  {
+    "id": 45,
+    "name": "Shader effects",
+    "route": "/effects",
+    "note": "Liquid, refractive-lens and particle-field shader variants.",
+    "status": "Implemented"
+  },
+  {
+    "id": 46,
+    "name": "Liquid distortion transitions",
+    "route": "/effects",
+    "note": "Liquid shader and ellipse/skew entry transitions between effect modes.",
+    "status": "Adapted"
+  },
+  {
+    "id": 47,
+    "name": "Glass/refraction effects",
+    "route": "/effects",
+    "note": "Procedural refractive-lens shader; translucent glass overlays elsewhere.",
+    "status": "Adapted"
+  },
+  {
+    "id": 48,
+    "name": "Noise/grain overlay for cinematic feel",
+    "route": "/",
+    "note": "Fixed cinematic grain overlay.",
+    "status": "Implemented"
+  },
+  {
+    "id": 49,
+    "name": "Dynamic spotlight following the cursor",
+    "route": "/",
+    "note": "Pointer-following light in the shader and cursor overlay.",
+    "status": "Implemented"
+  },
+  {
+    "id": 50,
+    "name": "Depth-of-field effects",
+    "route": "/world?mode=cards",
+    "note": "Bokeh postprocessing on floating 3D cards; adjustable layered blur in Effects.",
+    "status": "Implemented"
+  },
+  {
+    "id": 51,
+    "name": "Floating background objects",
+    "route": "/effects",
+    "note": "Floating bokeh objects, plus scene markers and skill nodes.",
+    "status": "Implemented"
+  },
+  {
+    "id": 52,
+    "name": "Interactive physics objects",
+    "route": "/effects",
+    "note": "Gravity, velocity, damping, boundary bounce and pair collisions.",
+    "status": "Implemented"
+  },
+  {
+    "id": 53,
+    "name": "Objects that move away from the cursor",
+    "route": "/effects",
+    "note": "Optional pointer repulsion; also present in 3D skill particles.",
+    "status": "Implemented"
+  },
+  {
+    "id": 54,
+    "name": "Objects users can drag around",
+    "route": "/effects",
+    "note": "Pointer capture supports dragging and throwing physics objects; Shift-drag rearranges 3D meshes.",
+    "status": "Implemented"
+  },
+  {
+    "id": 55,
+    "name": "Cards with realistic tilt based on cursor position",
+    "route": "/#work",
+    "note": "Perspective card tilt tracks pointer position; disabled for mobile/reduced motion.",
+    "status": "Implemented"
+  },
+  {
+    "id": 56,
+    "name": "Cards that flip to reveal more information",
+    "route": "/#work",
+    "note": "Flip controls reveal the back of selected-work cards.",
+    "status": "Implemented"
+  },
+  {
+    "id": 57,
+    "name": "Expandable project cards",
+    "route": "/work",
+    "note": "Native expandable project details in the searchable index.",
+    "status": "Implemented"
+  },
+  {
+    "id": 58,
+    "name": "Projects opening into full-screen case studies",
+    "route": "/work/quant-research-systems",
+    "note": "Dedicated full-page project views with context, links and diagrams where documented.",
+    "status": "Implemented"
+  },
+  {
+    "id": 59,
+    "name": "Animated project previews on hover",
+    "route": "/#work",
+    "note": "Animated chart strokes and distorted images on hover; charts are labeled illustrations.",
+    "status": "Implemented"
+  },
+  {
+    "id": 60,
+    "name": "Live website previews inside project cards",
+    "route": "/#work",
+    "note": "User-activated live iframes inside cards and case studies; external hosts may block embedding.",
+    "status": "Implemented"
+  },
+  {
+    "id": 61,
+    "name": "GitHub repository links",
+    "route": "/work",
+    "note": "Real repository links from the supplied GitHub profile.",
+    "status": "Implemented"
+  },
+  {
+    "id": 62,
+    "name": "GitHub activity visualization",
+    "route": "/activity",
+    "note": "Public events and repository activity fetched from GitHub with explicit fallback state.",
+    "status": "Implemented"
+  },
+  {
+    "id": 63,
+    "name": "Contribution graph",
+    "route": "/activity",
+    "note": "Public GitHub contribution intensity calendar; no generated activity.",
+    "status": "Implemented"
+  },
+  {
+    "id": 64,
+    "name": "Live project statistics",
+    "route": "/activity",
+    "note": "Live stars, forks, issues, repository count and push dates. Five-minute caching.",
+    "status": "Implemented"
+  },
+  {
+    "id": 65,
+    "name": "Project tech-stack icons",
+    "route": "/work/portfolio-optimizer",
+    "note": "Compact technology badges/icons for documented tools.",
+    "status": "Adapted"
+  },
+  {
+    "id": 66,
+    "name": "Project architecture diagrams",
+    "route": "/work/quant-research-systems",
+    "note": "Architecture diagram based on the actual HTML, app, math and renderer files.",
+    "status": "Implemented"
+  },
+  {
+    "id": 67,
+    "name": "Before/after project comparisons",
+    "route": "/work/portfolio-optimizer",
+    "note": "Interactive equal-weight vs custom-allocation risk explainer. Synthetic comparison, not claimed historical project impact.",
+    "status": "Adapted"
+  },
+  {
+    "id": 68,
+    "name": "Interactive code snippets",
+    "route": "/work/portfolio-optimizer",
+    "note": "Editable weight vector and runnable weighted-return calculation with validation.",
+    "status": "Adapted"
+  },
+  {
+    "id": 69,
+    "name": "Terminal-style project descriptions",
+    "route": "/work/quant-research-systems",
+    "note": "Terminal-style structured project summary.",
+    "status": "Implemented"
+  },
+  {
+    "id": 70,
+    "name": "Fake terminal where visitors can type commands",
+    "route": "/terminal",
+    "note": "Commands, history, search and route navigation; never executes shell commands.",
+    "status": "Implemented"
+  },
+  {
+    "id": 71,
+    "name": "Command palette opened with \u2318K",
+    "route": "/",
+    "note": "Command palette opens with Cmd+K or Ctrl+K.",
+    "status": "Implemented"
+  },
+  {
+    "id": 72,
+    "name": "Keyboard navigation",
+    "route": "/",
+    "note": "Keyboard-operable navigation, arrow-key command results, tabs, dialogs, accordion and accessible 3D object lists.",
+    "status": "Implemented"
+  },
+  {
+    "id": 73,
+    "name": "Easter-egg keyboard commands",
+    "route": "/",
+    "note": "N summons Nyan Cat; Konami sequence opens the secret room.",
+    "status": "Implemented"
+  },
+  {
+    "id": 74,
+    "name": "Secret pages/easter eggs",
+    "route": "/secret",
+    "note": "Hidden drum-room page, also discoverable through terminal secret command.",
+    "status": "Implemented"
+  },
+  {
+    "id": 75,
+    "name": "Achievement unlock animations",
+    "route": "/",
+    "note": "Animated achievement toasts.",
+    "status": "Implemented"
+  },
+  {
+    "id": 76,
+    "name": "Personal achievement system",
+    "route": "/secret",
+    "note": "Device-local achievement collection with a readable list.",
+    "status": "Implemented"
+  },
+  {
+    "id": 77,
+    "name": "\"Explore my journey\" interactive mode",
+    "route": "/journey",
+    "note": "Scroll-following milestones and detailed experience exploration.",
+    "status": "Implemented"
+  },
+  {
+    "id": 78,
+    "name": "Normal mode + immersive mode",
+    "route": "/world",
+    "note": "Normal portfolio navigation plus toggleable immersive 3D view.",
+    "status": "Implemented"
+  },
+  {
+    "id": 79,
+    "name": "Timeline from childhood \u2192 present",
+    "route": "/journey",
+    "note": "A foundations-to-present subject journey replaces unrelated dated stories. Dates remain unspecified where not supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 80,
+    "name": "Vertical experience timeline",
+    "route": "/journey",
+    "note": "Vertical scroll-driven milestone timeline and expandable experience index.",
+    "status": "Implemented"
+  },
+  {
+    "id": 81,
+    "name": "Horizontal career timeline",
+    "route": "/journey",
+    "note": "Horizontal milestone strip; home story rail moves horizontally.",
+    "status": "Implemented"
+  },
+  {
+    "id": 82,
+    "name": "Timeline that zooms into individual years",
+    "route": "/journey",
+    "note": "Year selector expands the selected milestone; year-map controls filter related experience.",
+    "status": "Implemented"
+  },
+  {
+    "id": 83,
+    "name": "Map of everything you have done by year",
+    "route": "/journey",
+    "note": "The journey is organized by subject phases because relevant event dates were not supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 84,
+    "name": "\"Age 11 \u2192 Present\" investing journey",
+    "route": "/journey",
+    "note": "Awaiting confirmation of an age-11 investing start and dated investing milestones. Not asserted publicly.",
+    "status": "Needs your facts"
+  },
+  {
+    "id": 85,
+    "name": "Animated counters for accomplishments",
+    "route": "/#impact",
+    "note": "Verified math, research, programming and teaching counters animate on entry.",
+    "status": "Implemented"
+  },
+  {
+    "id": 86,
+    "name": "Number of projects built",
+    "route": "/awards",
+    "note": "19 applications documented in the public README; 66 supplied code-project names remain an index, not a total shipped count.",
+    "status": "Adapted"
+  },
+  {
+    "id": 87,
+    "name": "Students taught",
+    "route": "/#impact",
+    "note": "35 FLL students supported; 10+ chess students taught. Counts kept separate.",
+    "status": "Implemented"
+  },
+  {
+    "id": 88,
+    "name": "Money raised",
+    "route": "/journey?q=Youth",
+    "note": "The supplied fundraising achievement remains in the relevant experience index; it is no longer a homepage headline.",
+    "status": "Implemented"
+  },
+  {
+    "id": 89,
+    "name": "Competitions won",
+    "route": "/awards",
+    "note": "Three chess tournament wins, three Math Olympiad championships and two DSDL wins, kept in their own categories.",
+    "status": "Implemented"
+  },
+  {
+    "id": 90,
+    "name": "Organizations worked with",
+    "route": "/awards",
+    "note": "Focused program and experience records are available; no deduplicated employer count is claimed.",
+    "status": "Adapted"
+  },
+  {
+    "id": 91,
+    "name": "Technologies learned",
+    "route": "/awards",
+    "note": "Six named technology tools backed by supplied details; not an invented mastery score.",
+    "status": "Adapted"
+  },
+  {
+    "id": 92,
+    "name": "Research papers/projects completed",
+    "route": "/research",
+    "note": "ThinkNeuro poster/report and ongoing paper are described. A verified total of completed papers/research projects has not been supplied.",
+    "status": "Needs your facts"
+  },
+  {
+    "id": 93,
+    "name": "Awards earned",
+    "route": "/awards",
+    "note": "Documented awards and their individual placements, with a 3D gallery.",
+    "status": "Implemented"
+  },
+  {
+    "id": 94,
+    "name": "Hours taught/coded",
+    "route": "/journey",
+    "note": "450+ volunteer hours and 4+ years of chess teaching are documented. Total hours taught/coded have not been supplied.",
+    "status": "Needs your facts"
+  },
+  {
+    "id": 95,
+    "name": "Interactive resume",
+    "route": "/resume",
+    "note": "Interactive expandable r\u00e9sum\u00e9 with drawing overlay.",
+    "status": "Implemented"
+  },
+  {
+    "id": 96,
+    "name": "Downloadable resume",
+    "route": "/resume",
+    "note": "Downloadable two-page PDF built from supplied facts; visually checked.",
+    "status": "Implemented"
+  },
+  {
+    "id": 97,
+    "name": "Resume that expands into detailed experiences",
+    "route": "/resume",
+    "note": "Expandable experience entries and full/selected r\u00e9sum\u00e9 toggle.",
+    "status": "Implemented"
+  },
+  {
+    "id": 98,
+    "name": "Visual skill map instead of normal skill bars",
+    "route": "/world?mode=galaxy",
+    "note": "Navigable skill map instead of proficiency bars.",
+    "status": "Implemented"
+  },
+  {
+    "id": 99,
+    "name": "Skill constellation",
+    "route": "/world?mode=galaxy",
+    "note": "Constellation nodes and connecting lines.",
+    "status": "Implemented"
+  },
+  {
+    "id": 100,
+    "name": "Skill galaxy",
+    "route": "/world?mode=galaxy",
+    "note": "Orbitable galaxy with depth-distributed particles.",
+    "status": "Implemented"
+  },
+  {
+    "id": 101,
+    "name": "Skill tree",
+    "route": "/world?mode=tree",
+    "note": "Tiered three-dimensional skill layout with selectable nodes.",
+    "status": "Implemented"
+  },
+  {
+    "id": 102,
+    "name": "Skill radar visualization",
+    "route": "/world?mode=galaxy",
+    "note": "Radar counts documented portfolio entries by area; explicitly not a self-rated skill score.",
+    "status": "Adapted"
+  },
+  {
+    "id": 103,
+    "name": "Technology orbit around your profile",
+    "route": "/world?mode=galaxy",
+    "note": "Technology nodes surround a central TP object; the scene orbits.",
+    "status": "Implemented"
+  },
+  {
+    "id": 104,
+    "name": "Connections between skills and projects",
+    "route": "/work",
+    "note": "Skill selection shows documented project and experience connections.",
+    "status": "Implemented"
+  },
+  {
+    "id": 105,
+    "name": "Clicking Python shows every project where you used Python",
+    "route": "/work?skill=Python",
+    "note": "Python filter returns the 19 documented Streamlit apps and Building U; unknown project stacks remain unassigned.",
+    "status": "Implemented"
+  },
+  {
+    "id": 106,
+    "name": "Clicking Finance shows investing/research projects",
+    "route": "/work?skill=Finance",
+    "note": "Finance filter shows quantitative models and related finance experience.",
+    "status": "Implemented"
+  },
+  {
+    "id": 107,
+    "name": "Clicking Leadership shows organizations and achievements",
+    "route": "/work?skill=Leadership",
+    "note": "Leadership filter connects STEMPulse and relevant organizations/achievements.",
+    "status": "Implemented"
+  },
+  {
+    "id": 108,
+    "name": "Filter projects by AI / Quant / Finance / Full Stack / Research",
+    "route": "/work",
+    "note": "AI / Quant / Finance / Full Stack / Research filters, plus leadership and engineering.",
+    "status": "Implemented"
+  },
+  {
+    "id": 109,
+    "name": "Search bar for your entire portfolio",
+    "route": "/",
+    "note": "Global search covers supplied projects, experiences, skills and pages.",
+    "status": "Implemented"
+  },
+  {
+    "id": 110,
+    "name": "Global command search",
+    "route": "/",
+    "note": "Cmd/Ctrl+K global command search with arrow-key selection.",
+    "status": "Implemented"
+  },
+  {
+    "id": 111,
+    "name": "Project sorting by year",
+    "route": "/work",
+    "note": "Year sorting is available, but project dates were not supplied. Undated entries remain alphabetical.",
+    "status": "Needs your facts"
+  },
+  {
+    "id": 112,
+    "name": "Project sorting by complexity",
+    "route": "/work",
+    "note": "An explicitly labeled proxy orders live applications first, then documented stack size; this is not a measured complexity rating.",
+    "status": "Adapted"
+  },
+  {
+    "id": 113,
+    "name": "Project sorting by technology",
+    "route": "/work",
+    "note": "Sort the expanded project index by its first documented technology.",
+    "status": "Implemented"
+  },
+  {
+    "id": 114,
+    "name": "Interactive quantitative-finance dashboard",
+    "route": "/quant",
+    "note": "Interactive quant studio: seeded GBM paths, mean-variance allocation, Black\u2013Scholes sensitivities, regime rules and editable mathematical assumptions. Educational synthetic data.",
+    "status": "Implemented"
+  },
+  {
+    "id": 115,
+    "name": "Live Monte Carlo simulation",
+    "route": "/quant",
+    "note": "Interactive quant studio: seeded GBM paths, mean-variance allocation, Black\u2013Scholes sensitivities, regime rules and editable mathematical assumptions. Educational synthetic data.",
+    "status": "Implemented"
+  },
+  {
+    "id": 116,
+    "name": "Interactive stock backtest",
+    "route": "/quant",
+    "note": "Moving-average backtest uses prior-close signals, costs, buy-and-hold comparison and optional closing-price CSV upload. No live historical-price feed.",
+    "status": "Adapted"
+  },
+  {
+    "id": 117,
+    "name": "Portfolio optimizer demo",
+    "route": "/quant",
+    "note": "Interactive quant studio: seeded GBM paths, mean-variance allocation, Black\u2013Scholes sensitivities, regime rules and editable mathematical assumptions. Educational synthetic data.",
+    "status": "Implemented"
+  },
+  {
+    "id": 118,
+    "name": "Options Greeks visualizer",
+    "route": "/quant",
+    "note": "Interactive quant studio: seeded GBM paths, mean-variance allocation, Black\u2013Scholes sensitivities, regime rules and editable mathematical assumptions. Educational synthetic data.",
+    "status": "Implemented"
+  },
+  {
+    "id": 119,
+    "name": "Volatility surface visualization",
+    "route": "/quant",
+    "note": "A perspective volatility grid varies moneyness and expiry using a labeled synthetic smile; it is not a calibrated market surface.",
+    "status": "Adapted"
+  },
+  {
+    "id": 120,
+    "name": "Market regime visualization",
+    "route": "/quant",
+    "note": "Interactive quant studio: seeded GBM paths, mean-variance allocation, Black\u2013Scholes sensitivities, regime rules and editable mathematical assumptions. Educational synthetic data.",
+    "status": "Implemented"
+  },
+  {
+    "id": 121,
+    "name": "Animated stock chart background",
+    "route": "/",
+    "note": "Selected project chart artwork animates on hover. A live-stock-price background was not added.",
+    "status": "Adapted"
+  },
+  {
+    "id": 122,
+    "name": "Interactive mathematical equations",
+    "route": "/quant",
+    "note": "Interactive quant studio: seeded GBM paths, mean-variance allocation, Black\u2013Scholes sensitivities, regime rules and editable mathematical assumptions. Educational synthetic data.",
+    "status": "Implemented"
+  },
+  {
+    "id": 123,
+    "name": "Equations forming into project names",
+    "route": "/quant",
+    "note": "Equations are paired with their project interpretation; the text does not literally morph into project names.",
+    "status": "Adapted"
+  },
+  {
+    "id": 124,
+    "name": "Particle visualization based on market data",
+    "route": "/visuals",
+    "note": "Market-particle mode follows a synthetic price-like signal. A market-data provider is not connected.",
+    "status": "Needs connection"
+  },
+  {
+    "id": 125,
+    "name": "Personal \"research lab\" section",
+    "route": "/lab",
+    "note": "The ten-module research lab remains available alongside the new quant studio.",
+    "status": "Implemented"
+  },
+  {
+    "id": 126,
+    "name": "Research paper cards",
+    "route": "/journal",
+    "note": "Research and technical-note cards distinguish educational explainers from the supplied research experience; no published manuscript is invented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 127,
+    "name": "Expandable abstracts",
+    "route": "/journal",
+    "note": "Expandable abstracts, full notes, selectable methodology stages, animated pipeline indicators and source citations.",
+    "status": "Implemented"
+  },
+  {
+    "id": 128,
+    "name": "Interactive methodology diagrams",
+    "route": "/journal",
+    "note": "Expandable abstracts, full notes, selectable methodology stages, animated pipeline indicators and source citations.",
+    "status": "Implemented"
+  },
+  {
+    "id": 129,
+    "name": "Animated research pipelines",
+    "route": "/journal",
+    "note": "Expandable abstracts, full notes, selectable methodology stages, animated pipeline indicators and source citations.",
+    "status": "Implemented"
+  },
+  {
+    "id": 130,
+    "name": "Citation section",
+    "route": "/journal",
+    "note": "Expandable abstracts, full notes, selectable methodology stages, animated pipeline indicators and source citations.",
+    "status": "Implemented"
+  },
+  {
+    "id": 131,
+    "name": "Awards wall",
+    "route": "/awards",
+    "note": "Relevant awards wall and linked interactive 3D trophy gallery.",
+    "status": "Implemented"
+  },
+  {
+    "id": 132,
+    "name": "Trophy-room style awards page",
+    "route": "/awards",
+    "note": "Relevant awards wall and linked interactive 3D trophy gallery.",
+    "status": "Implemented"
+  },
+  {
+    "id": 133,
+    "name": "Hover over award \u2192 story behind it appears",
+    "route": "/impact",
+    "note": "Award stories expand on click or keyboard instead of depending on hover.",
+    "status": "Adapted"
+  },
+  {
+    "id": 134,
+    "name": "Award timeline",
+    "route": "/impact",
+    "note": "Award results are listed, but dates were not supplied; no false award chronology is shown.",
+    "status": "Needs your facts"
+  },
+  {
+    "id": 135,
+    "name": "Animated medals/badges",
+    "route": "/impact",
+    "note": "Animated medal marks, competition results, math/STEM teaching records and verified impact counters.",
+    "status": "Implemented"
+  },
+  {
+    "id": 136,
+    "name": "Competition results visualization",
+    "route": "/impact",
+    "note": "Animated medal marks, competition results, math/STEM teaching records and verified impact counters.",
+    "status": "Implemented"
+  },
+  {
+    "id": 137,
+    "name": "Leadership impact dashboard",
+    "route": "/impact",
+    "note": "Animated medal marks, competition results, math/STEM teaching records and verified impact counters.",
+    "status": "Implemented"
+  },
+  {
+    "id": 138,
+    "name": "Organization logos orbiting around you",
+    "route": "/impact",
+    "note": "An organization-name marquee replaces orbiting official logos because approved logo assets were not supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 139,
+    "name": "Interactive organization network",
+    "route": "/graph",
+    "note": "Documented experience nodes link to portfolio records. The network is not a verified map of personal collaborators.",
+    "status": "Adapted"
+  },
+  {
+    "id": 140,
+    "name": "\"Impact by the numbers\" section",
+    "route": "/impact",
+    "note": "Animated medal marks, competition results, math/STEM teaching records and verified impact counters.",
+    "status": "Implemented"
+  },
+  {
+    "id": 141,
+    "name": "Teaching section showing students/subjects",
+    "route": "/impact",
+    "note": "Animated medal marks, competition results, math/STEM teaching records and verified impact counters.",
+    "status": "Implemented"
+  },
+  {
+    "id": 142,
+    "name": "Interactive chess board for chess experience",
+    "route": "/play",
+    "note": "Optional eight-by-eight chess puzzle: White plays Qg7 mate, with keyboard-operable square buttons. A full legal-move chess engine is not included.",
+    "status": "Adapted"
+  },
+  {
+    "id": 143,
+    "name": "Playable mini chess puzzle",
+    "route": "/play",
+    "note": "Optional eight-by-eight chess puzzle: White plays Qg7 mate, with keyboard-operable square buttons. A full legal-move chess engine is not included.",
+    "status": "Adapted"
+  },
+  {
+    "id": 144,
+    "name": "Interactive drum pad for music experience",
+    "route": "/secret",
+    "note": "Optional six-pad synthesized drum instrument, also playable with A/S/D/F/J/K.",
+    "status": "Implemented"
+  },
+  {
+    "id": 145,
+    "name": "Drum sounds when clicking sections",
+    "route": "/secret",
+    "note": "Drum sounds are confined to the optional instrument; the main professional sections retain subtle opt-in UI tones.",
+    "status": "Adapted"
+  },
+  {
+    "id": 146,
+    "name": "Basketball shot mini-animation",
+    "route": "/play",
+    "note": "Optional basketball shot animation and local basket counter; deliberately kept outside the main story.",
+    "status": "Implemented"
+  },
+  {
+    "id": 147,
+    "name": "Small basketball easter egg game",
+    "route": "/play",
+    "note": "Optional basketball shot animation and local basket counter; deliberately kept outside the main story.",
+    "status": "Implemented"
+  },
+  {
+    "id": 148,
+    "name": "Coding mini-game",
+    "route": "/algorithms",
+    "note": "Complexity challenge and dice-probability puzzle with answer feedback and achievement unlocks.",
+    "status": "Implemented"
+  },
+  {
+    "id": 149,
+    "name": "Math puzzle easter egg",
+    "route": "/algorithms",
+    "note": "Complexity challenge and dice-probability puzzle with answer feedback and achievement unlocks.",
+    "status": "Implemented"
+  },
+  {
+    "id": 150,
+    "name": "Custom 404 mini-game",
+    "route": "/missing-coordinate",
+    "note": "Custom 404 includes a Fibonacci puzzle with answer feedback.",
+    "status": "Implemented"
+  },
+  {
+    "id": 151,
+    "name": "Personalized AI chatbot about you",
+    "route": "/guide",
+    "note": "A source-linked retrieval guide and rule-based reading paths are available. A generative AI provider has not been connected.",
+    "status": "Needs connection"
+  },
+  {
+    "id": 152,
+    "name": "\"Ask Tanish\" AI assistant",
+    "route": "/guide",
+    "note": "A source-linked retrieval guide and rule-based reading paths are available. A generative AI provider has not been connected.",
+    "status": "Needs connection"
+  },
+  {
+    "id": 153,
+    "name": "Chatbot that answers questions about projects",
+    "route": "/guide",
+    "note": "The guide returns matching documented project and experience records, without generating unsupported answers.",
+    "status": "Adapted"
+  },
+  {
+    "id": 154,
+    "name": "Suggested chatbot questions",
+    "route": "/guide",
+    "note": "Suggested topic questions launch the same source-backed search.",
+    "status": "Implemented"
+  },
+  {
+    "id": 155,
+    "name": "Voice interface for portfolio chatbot",
+    "route": "/guide",
+    "note": "Optional browser speech recognition and read-aloud controls, with capability fallback and explicit activation. Browser/provider support varies.",
+    "status": "Adapted"
+  },
+  {
+    "id": 156,
+    "name": "AI-powered project recommendation",
+    "route": "/guide",
+    "note": "A source-linked retrieval guide and rule-based reading paths are available. A generative AI provider has not been connected.",
+    "status": "Needs connection"
+  },
+  {
+    "id": 157,
+    "name": "\"What should you explore?\" personalization",
+    "route": "/explore",
+    "note": "Recruiter, Researcher, Student, Developer and Quant paths reorder recommendations; saved mode also changes homepage section order.",
+    "status": "Implemented"
+  },
+  {
+    "id": 158,
+    "name": "Visitor chooses Recruiter / Researcher / Student / Developer",
+    "route": "/explore",
+    "note": "Recruiter, Researcher, Student, Developer and Quant paths reorder recommendations; saved mode also changes homepage section order.",
+    "status": "Implemented"
+  },
+  {
+    "id": 159,
+    "name": "Website reorganizes content for that visitor",
+    "route": "/explore",
+    "note": "Recruiter, Researcher, Student, Developer and Quant paths reorder recommendations; saved mode also changes homepage section order.",
+    "status": "Implemented"
+  },
+  {
+    "id": 160,
+    "name": "Recruiter mode",
+    "route": "/explore",
+    "note": "Recruiter, Researcher, Student, Developer and Quant paths reorder recommendations; saved mode also changes homepage section order.",
+    "status": "Implemented"
+  },
+  {
+    "id": 161,
+    "name": "Developer mode",
+    "route": "/explore",
+    "note": "Recruiter, Researcher, Student, Developer and Quant paths reorder recommendations; saved mode also changes homepage section order.",
+    "status": "Implemented"
+  },
+  {
+    "id": 162,
+    "name": "Quant mode",
+    "route": "/explore",
+    "note": "Recruiter, Researcher, Student, Developer and Quant paths reorder recommendations; saved mode also changes homepage section order.",
+    "status": "Implemented"
+  },
+  {
+    "id": 163,
+    "name": "Research mode",
+    "route": "/explore",
+    "note": "Recruiter, Researcher, Student, Developer and Quant paths reorder recommendations; saved mode also changes homepage section order.",
+    "status": "Implemented"
+  },
+  {
+    "id": 164,
+    "name": "Minimal resume mode",
+    "route": "/resume?minimal=1",
+    "note": "Minimal mode hides surrounding navigation, the cinematic heading and doodle controls, keeping the r\u00e9sum\u00e9 and download action.",
+    "status": "Implemented"
+  },
+  {
+    "id": 165,
+    "name": "Full immersive portfolio mode",
+    "route": "/world",
+    "note": "Immersive scene view hides surrounding prose and expands the interactive world.",
+    "status": "Implemented"
+  },
+  {
+    "id": 166,
+    "name": "Dark/light mode",
+    "route": "/",
+    "note": "Global light/dark toggle plus Finance, Coding, Space and time-based accent palettes. Preferences persist locally and colors transition unless motion is reduced.",
+    "status": "Implemented"
+  },
+  {
+    "id": 167,
+    "name": "Theme switch animation",
+    "route": "/",
+    "note": "Global light/dark toggle plus Finance, Coding, Space and time-based accent palettes. Preferences persist locally and colors transition unless motion is reduced.",
+    "status": "Implemented"
+  },
+  {
+    "id": 168,
+    "name": "Custom themes based on your interests",
+    "route": "/",
+    "note": "Global light/dark toggle plus Finance, Coding, Space and time-based accent palettes. Preferences persist locally and colors transition unless motion is reduced.",
+    "status": "Implemented"
+  },
+  {
+    "id": 169,
+    "name": "Finance theme",
+    "route": "/",
+    "note": "Global light/dark toggle plus Finance, Coding, Space and time-based accent palettes. Preferences persist locally and colors transition unless motion is reduced.",
+    "status": "Implemented"
+  },
+  {
+    "id": 170,
+    "name": "Coding theme",
+    "route": "/",
+    "note": "Global light/dark toggle plus Finance, Coding, Space and time-based accent palettes. Preferences persist locally and colors transition unless motion is reduced.",
+    "status": "Implemented"
+  },
+  {
+    "id": 171,
+    "name": "Space/futuristic theme",
+    "route": "/",
+    "note": "Global light/dark toggle plus Finance, Coding, Space and time-based accent palettes. Preferences persist locally and colors transition unless motion is reduced.",
+    "status": "Implemented"
+  },
+  {
+    "id": 172,
+    "name": "Dynamic time-based theme",
+    "route": "/",
+    "note": "Global light/dark toggle plus Finance, Coding, Space and time-based accent palettes. Preferences persist locally and colors transition unless motion is reduced.",
+    "status": "Implemented"
+  },
+  {
+    "id": 173,
+    "name": "Animated theme transitions",
+    "route": "/",
+    "note": "Global light/dark toggle plus Finance, Coding, Space and time-based accent palettes. Preferences persist locally and colors transition unless motion is reduced.",
+    "status": "Implemented"
+  },
+  {
+    "id": 174,
+    "name": "Page-transition animations",
+    "route": "/",
+    "note": "Route changes fade and translate the page, respecting reduced motion.",
+    "status": "Implemented"
+  },
+  {
+    "id": 175,
+    "name": "Morphing page transitions",
+    "route": "/motion",
+    "note": "Interactive Morph, Circle, Zoom and Overlay transition demonstrations use View Transitions where supported, with an immediate fallback.",
+    "status": "Adapted"
+  },
+  {
+    "id": 176,
+    "name": "Circular reveal transitions",
+    "route": "/motion",
+    "note": "Interactive Morph, Circle, Zoom and Overlay transition demonstrations use View Transitions where supported, with an immediate fallback.",
+    "status": "Adapted"
+  },
+  {
+    "id": 177,
+    "name": "Zoom-through-object transitions",
+    "route": "/motion",
+    "note": "Interactive Morph, Circle, Zoom and Overlay transition demonstrations use View Transitions where supported, with an immediate fallback.",
+    "status": "Adapted"
+  },
+  {
+    "id": 178,
+    "name": "Project card \u2192 project page morph animation",
+    "route": "/motion",
+    "note": "A shared-element project-card expansion demonstrates the morph. Opening a routed case study uses the site-wide page transition.",
+    "status": "Adapted"
+  },
+  {
+    "id": 179,
+    "name": "Shared-element transitions",
+    "route": "/motion",
+    "note": "Interactive Morph, Circle, Zoom and Overlay transition demonstrations use View Transitions where supported, with an immediate fallback.",
+    "status": "Adapted"
+  },
+  {
+    "id": 180,
+    "name": "Loading transitions between projects",
+    "route": "/work",
+    "note": "Project navigation uses route transitions; heavy scenes retain their loading states. No artificial loading delay is added.",
+    "status": "Adapted"
+  },
+  {
+    "id": 181,
+    "name": "Full-page transition overlays",
+    "route": "/motion",
+    "note": "Interactive Morph, Circle, Zoom and Overlay transition demonstrations use View Transitions where supported, with an immediate fallback.",
+    "status": "Adapted"
+  },
+  {
+    "id": 182,
+    "name": "Animated navbar",
+    "route": "/",
+    "note": "Animated floating header, scroll shrink, progress line and section-aware links; desktop OS also has its own dock.",
+    "status": "Implemented"
+  },
+  {
+    "id": 183,
+    "name": "Navbar that shrinks while scrolling",
+    "route": "/",
+    "note": "Animated floating header, scroll shrink, progress line and section-aware links; desktop OS also has its own dock.",
+    "status": "Implemented"
+  },
+  {
+    "id": 184,
+    "name": "Navbar progress indicator",
+    "route": "/",
+    "note": "Animated floating header, scroll shrink, progress line and section-aware links; desktop OS also has its own dock.",
+    "status": "Implemented"
+  },
+  {
+    "id": 185,
+    "name": "Floating navigation dock",
+    "route": "/",
+    "note": "Animated floating header, scroll shrink, progress line and section-aware links; desktop OS also has its own dock.",
+    "status": "Implemented"
+  },
+  {
+    "id": 186,
+    "name": "Section-aware navigation",
+    "route": "/",
+    "note": "Animated floating header, scroll shrink, progress line and section-aware links; desktop OS also has its own dock.",
+    "status": "Implemented"
+  },
+  {
+    "id": 187,
+    "name": "Hover previews inside navigation",
+    "route": "/",
+    "note": "Navigation exposes destination labels on hover; rich media previews are not added to the header.",
+    "status": "Adapted"
+  },
+  {
+    "id": 188,
+    "name": "Command-center navigation",
+    "route": "/desktop",
+    "note": "Command palette and desktop Spotlight provide command-center navigation.",
+    "status": "Implemented"
+  },
+  {
+    "id": 189,
+    "name": "Mobile gesture navigation",
+    "route": "/motion",
+    "note": "Touch scrolling and snap points let visitors swipe the project gallery. General browser back/forward gestures are left to the browser.",
+    "status": "Adapted"
+  },
+  {
+    "id": 190,
+    "name": "Mobile swipe transitions",
+    "route": "/motion",
+    "note": "Touch scrolling and snap points let visitors swipe the project gallery. General browser back/forward gestures are left to the browser.",
+    "status": "Adapted"
+  },
+  {
+    "id": 191,
+    "name": "Responsive animation intensity",
+    "route": "/",
+    "note": "Responsive layouts, reduced-motion support and opt-in sound controls remain global.",
+    "status": "Implemented"
+  },
+  {
+    "id": 192,
+    "name": "Reduced-motion accessibility option",
+    "route": "/",
+    "note": "Responsive layouts, reduced-motion support and opt-in sound controls remain global.",
+    "status": "Implemented"
+  },
+  {
+    "id": 193,
+    "name": "Sound effects toggle",
+    "route": "/",
+    "note": "Responsive layouts, reduced-motion support and opt-in sound controls remain global.",
+    "status": "Implemented"
+  },
+  {
+    "id": 194,
+    "name": "Ambient background audio option",
+    "route": "/",
+    "note": "Tune experience includes opt-in synthesized ambient audio with a live frequency-bar and particle visualizer.",
+    "status": "Implemented"
+  },
+  {
+    "id": 195,
+    "name": "Subtle UI sounds",
+    "route": "/",
+    "note": "Important button and link clicks play a subtle tone only after Sound is enabled.",
+    "status": "Implemented"
+  },
+  {
+    "id": 196,
+    "name": "Hover sounds",
+    "route": "/",
+    "note": "Hover and route tones play only after the global Sound control is enabled.",
+    "status": "Implemented"
+  },
+  {
+    "id": 197,
+    "name": "Page transition sounds",
+    "route": "/",
+    "note": "Hover and route tones play only after the global Sound control is enabled.",
+    "status": "Implemented"
+  },
+  {
+    "id": 198,
+    "name": "Cinematic introduction sound",
+    "route": "/",
+    "note": "Tune experience can replay the cinematic introduction with sound if Sound is enabled. First-load autoplay stays muted.",
+    "status": "Adapted"
+  },
+  {
+    "id": 199,
+    "name": "Interactive sound visualization",
+    "route": "/",
+    "note": "Tune experience includes opt-in synthesized ambient audio with a live frequency-bar and particle visualizer.",
+    "status": "Implemented"
+  },
+  {
+    "id": 200,
+    "name": "Audio-reactive particles",
+    "route": "/",
+    "note": "Tune experience includes opt-in synthesized ambient audio with a live frequency-bar and particle visualizer.",
+    "status": "Implemented"
+  },
+  {
+    "id": 201,
+    "name": "Animated profile portrait",
+    "route": "/visuals",
+    "note": "An animated, pointer-reactive TP particle portrait stands in for a personal photo, which was not supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 202,
+    "name": "Profile image reacting to mouse movement",
+    "route": "/visuals",
+    "note": "An animated, pointer-reactive TP particle portrait stands in for a personal photo, which was not supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 203,
+    "name": "Profile image made from particles",
+    "route": "/visuals",
+    "note": "An animated, pointer-reactive TP particle portrait stands in for a personal photo, which was not supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 204,
+    "name": "Image reveal through typography",
+    "route": "/effects",
+    "note": "Image-masked display typography appears in the effects studio.",
+    "status": "Implemented"
+  },
+  {
+    "id": 205,
+    "name": "Split-screen hero section",
+    "route": "/",
+    "note": "Split hero composition pairs introduction and explanatory text with the actual interactive keyboard.",
+    "status": "Implemented"
+  },
+  {
+    "id": 206,
+    "name": "Infinite marquee of skills",
+    "route": "/visuals",
+    "note": "A continuous math/Python/finance/algorithm marquee; reduced motion stops it.",
+    "status": "Implemented"
+  },
+  {
+    "id": 207,
+    "name": "Infinite project carousel",
+    "route": "/motion",
+    "note": "A repeated, swipeable project gallery provides continuous browsing; it is finite repeated content rather than an unbounded feed.",
+    "status": "Adapted"
+  },
+  {
+    "id": 208,
+    "name": "Infinite logo carousel",
+    "route": "/impact",
+    "note": "Continuous organization-name marquee uses text rather than unprovided logos.",
+    "status": "Adapted"
+  },
+  {
+    "id": 209,
+    "name": "Bento-grid layout",
+    "route": "/",
+    "note": "Editorial hero and story rail, dense impact grid, layered project cards, glass navigation and deliberate whitespace.",
+    "status": "Implemented"
+  },
+  {
+    "id": 210,
+    "name": "Asymmetric editorial layout",
+    "route": "/",
+    "note": "Editorial hero and story rail, dense impact grid, layered project cards, glass navigation and deliberate whitespace.",
+    "status": "Implemented"
+  },
+  {
+    "id": 211,
+    "name": "Layered cards",
+    "route": "/",
+    "note": "Editorial hero and story rail, dense impact grid, layered project cards, glass navigation and deliberate whitespace.",
+    "status": "Implemented"
+  },
+  {
+    "id": 212,
+    "name": "Floating glass panels",
+    "route": "/",
+    "note": "Editorial hero and story rail, dense impact grid, layered project cards, glass navigation and deliberate whitespace.",
+    "status": "Implemented"
+  },
+  {
+    "id": 213,
+    "name": "Large cinematic whitespace",
+    "route": "/",
+    "note": "Editorial hero and story rail, dense impact grid, layered project cards, glass navigation and deliberate whitespace.",
+    "status": "Implemented"
+  },
+  {
+    "id": 214,
+    "name": "Interactive background grid",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 215,
+    "name": "Grid that bends toward cursor",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 216,
+    "name": "Perspective grid",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 217,
+    "name": "Matrix/code-rain section",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 218,
+    "name": "Generative mathematical background",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 219,
+    "name": "Animated topology lines",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 220,
+    "name": "Voronoi animation",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 221,
+    "name": "Flow-field particles",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 222,
+    "name": "Reaction-diffusion visual effects",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 223,
+    "name": "Interactive star field",
+    "route": "/visuals",
+    "note": "Dedicated procedural modes: pointer-bent perspective grid, code rain, topology, Voronoi nearest-site cells, flow field, Gray\u2013Scott reaction diffusion and star field.",
+    "status": "Implemented"
+  },
+  {
+    "id": 224,
+    "name": "Constellations representing achievements",
+    "route": "/graph",
+    "note": "Portfolio entries are mapped as selectable nodes and project points; the 3D galaxy remains available. These are abstractions rather than literal planet models.",
+    "status": "Adapted"
+  },
+  {
+    "id": 225,
+    "name": "Stars representing projects",
+    "route": "/graph",
+    "note": "Portfolio entries are mapped as selectable nodes and project points; the 3D galaxy remains available. These are abstractions rather than literal planet models.",
+    "status": "Adapted"
+  },
+  {
+    "id": 226,
+    "name": "Scroll through a \"universe\" of your accomplishments",
+    "route": "/graph",
+    "note": "Portfolio entries are mapped as selectable nodes and project points; the 3D galaxy remains available. These are abstractions rather than literal planet models.",
+    "status": "Adapted"
+  },
+  {
+    "id": 227,
+    "name": "Camera zoom between portfolio sections",
+    "route": "/world",
+    "note": "Orbit and zoom controls move through a selected 3D scene; switching modes rebuilds the scene rather than flying between page sections.",
+    "status": "Adapted"
+  },
+  {
+    "id": 228,
+    "name": "Website structured like an interactive world",
+    "route": "/world",
+    "note": "The interactive neighborhood and 3D journey remain available, now focused on relevant subjects.",
+    "status": "Implemented"
+  },
+  {
+    "id": 229,
+    "name": "Project \"planets\"",
+    "route": "/graph",
+    "note": "Portfolio entries are mapped as selectable nodes and project points; the 3D galaxy remains available. These are abstractions rather than literal planet models.",
+    "status": "Adapted"
+  },
+  {
+    "id": 230,
+    "name": "Career timeline represented as a journey",
+    "route": "/world",
+    "note": "The interactive neighborhood and 3D journey remain available, now focused on relevant subjects.",
+    "status": "Implemented"
+  },
+  {
+    "id": 231,
+    "name": "Zoomable canvas containing your entire life/portfolio",
+    "route": "/graph",
+    "note": "Pan/zoom atlas with profile, skill, project, experience and award nodes. Select a node to reveal documented technology relationships; incomplete relationships are not invented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 232,
+    "name": "Interactive graph where experiences connect",
+    "route": "/graph",
+    "note": "Pan/zoom atlas with profile, skill, project, experience and award nodes. Select a node to reveal documented technology relationships; incomplete relationships are not invented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 233,
+    "name": "Nodes connecting projects \u2192 skills \u2192 awards \u2192 organizations",
+    "route": "/graph",
+    "note": "Pan/zoom atlas with profile, skill, project, experience and award nodes. Select a node to reveal documented technology relationships; incomplete relationships are not invented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 234,
+    "name": "Clicking a node reveals its relationships",
+    "route": "/graph",
+    "note": "Pan/zoom atlas with profile, skill, project, experience and award nodes. Select a node to reveal documented technology relationships; incomplete relationships are not invented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 235,
+    "name": "Animated SVG illustrations",
+    "route": "/architecture",
+    "note": "SVG charts and diagrams, animated arrows and selectable pipeline stages explain actual code and data flow.",
+    "status": "Implemented"
+  },
+  {
+    "id": 236,
+    "name": "Hand-drawn annotations around important content",
+    "route": "/resume",
+    "note": "Visitors can draw hand-written annotations on the r\u00e9sum\u00e9 canvas and download the doodle layer.",
+    "status": "Implemented"
+  },
+  {
+    "id": 237,
+    "name": "Animated arrows and diagrams",
+    "route": "/architecture",
+    "note": "SVG charts and diagrams, animated arrows and selectable pipeline stages explain actual code and data flow.",
+    "status": "Implemented"
+  },
+  {
+    "id": 238,
+    "name": "SVG path drawing on scroll",
+    "route": "/contact",
+    "note": "A stylized TP signature path draws on entry; no personal handwritten signature was supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 239,
+    "name": "Animated signature",
+    "route": "/contact",
+    "note": "A stylized TP signature path draws on entry; no personal handwritten signature was supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 240,
+    "name": "Animated handwritten notes",
+    "route": "/contact",
+    "note": "A stylized TP signature path draws on entry; no personal handwritten signature was supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 241,
+    "name": "Dynamic statistics",
+    "route": "/activity",
+    "note": "Public GitHub repository stats and recent activity refresh through the API with a dated fallback. This is request-time data, not a streaming socket.",
+    "status": "Adapted"
+  },
+  {
+    "id": 242,
+    "name": "Real-time GitHub stars/commits",
+    "route": "/activity",
+    "note": "Public GitHub repository stats and recent activity refresh through the API with a dated fallback. This is request-time data, not a streaming socket.",
+    "status": "Adapted"
+  },
+  {
+    "id": 243,
+    "name": "Current project status indicators",
+    "route": "/work",
+    "note": "Every project shows its documented status, distinguishing public code from supplied ideas.",
+    "status": "Implemented"
+  },
+  {
+    "id": 244,
+    "name": "\"Currently building\" section",
+    "route": "/now",
+    "note": "Relevant pursuits and future learning appear on Now; completion and dates stay unclaimed where absent.",
+    "status": "Adapted"
+  },
+  {
+    "id": 245,
+    "name": "\"Currently learning\" section",
+    "route": "/now",
+    "note": "Relevant pursuits and future learning appear on Now; completion and dates stay unclaimed where absent.",
+    "status": "Adapted"
+  },
+  {
+    "id": 246,
+    "name": "Now page",
+    "route": "/now",
+    "note": "Relevant pursuits and future learning appear on Now; completion and dates stay unclaimed where absent.",
+    "status": "Adapted"
+  },
+  {
+    "id": 247,
+    "name": "Interactive goals roadmap",
+    "route": "/roadmap",
+    "note": "An interactive proposed math/software/quant learning roadmap tracks visitor exploration. It does not imply completed personal milestones.",
+    "status": "Adapted"
+  },
+  {
+    "id": 248,
+    "name": "Future goals timeline",
+    "route": "/roadmap",
+    "note": "An interactive proposed math/software/quant learning roadmap tracks visitor exploration. It does not imply completed personal milestones.",
+    "status": "Adapted"
+  },
+  {
+    "id": 249,
+    "name": "College/career goals visualization",
+    "route": "/roadmap",
+    "note": "An interactive proposed math/software/quant learning roadmap tracks visitor exploration. It does not imply completed personal milestones.",
+    "status": "Adapted"
+  },
+  {
+    "id": 250,
+    "name": "Quant career roadmap",
+    "route": "/roadmap",
+    "note": "An interactive proposed math/software/quant learning roadmap tracks visitor exploration. It does not imply completed personal milestones.",
+    "status": "Adapted"
+  },
+  {
+    "id": 251,
+    "name": "Blog/research journal",
+    "route": "/journal",
+    "note": "Research journal with covariance, look-ahead bias, reproducible simulation and documented R research notes.",
+    "status": "Implemented"
+  },
+  {
+    "id": 252,
+    "name": "Engineering notes",
+    "route": "/journal",
+    "note": "Research journal with covariance, look-ahead bias, reproducible simulation and documented R research notes.",
+    "status": "Implemented"
+  },
+  {
+    "id": 253,
+    "name": "Investment research section",
+    "route": "/journal",
+    "note": "Research journal with covariance, look-ahead bias, reproducible simulation and documented R research notes.",
+    "status": "Implemented"
+  },
+  {
+    "id": 254,
+    "name": "Technical writeups",
+    "route": "/journal",
+    "note": "Research journal with covariance, look-ahead bias, reproducible simulation and documented R research notes.",
+    "status": "Implemented"
+  },
+  {
+    "id": 255,
+    "name": "Project changelogs",
+    "route": "/desktop",
+    "note": "Website version notes are provided. Repository-specific annual release histories were not supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 256,
+    "name": "Case studies explaining problem \u2192 approach \u2192 engineering \u2192 results",
+    "route": "/work",
+    "note": "Case studies explain documented context, architecture and available demonstrations. Unsupported results are not invented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 257,
+    "name": "Interactive architecture diagrams",
+    "route": "/architecture",
+    "note": "Selectable request pipeline, expandable D1 table diagrams and working JSON endpoint links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 258,
+    "name": "Interactive database diagrams",
+    "route": "/architecture",
+    "note": "Selectable request pipeline, expandable D1 table diagrams and working JSON endpoint links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 259,
+    "name": "API visualization",
+    "route": "/architecture",
+    "note": "Selectable request pipeline, expandable D1 table diagrams and working JSON endpoint links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 260,
+    "name": "Animated data pipelines",
+    "route": "/architecture",
+    "note": "Selectable request pipeline, expandable D1 table diagrams and working JSON endpoint links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 261,
+    "name": "Performance metrics for projects",
+    "route": "/performance",
+    "note": "The site measures its own browser session; unprovided historical project performance metrics are not invented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 262,
+    "name": "Lighthouse/performance score page",
+    "route": "/performance",
+    "note": "Runtime frame-rate, load-event and resource measurements are shown. A Lighthouse score has not been run and is explicitly absent.",
+    "status": "Adapted"
+  },
+  {
+    "id": 263,
+    "name": "Accessibility-first design",
+    "route": "/",
+    "note": "Semantic headings and controls, visible focus, skip link, dialogs and keyboard alternatives accompany visual interactions. This is not an exhaustive accessibility certification.",
+    "status": "Adapted"
+  },
+  {
+    "id": 264,
+    "name": "Fully keyboard-accessible interface",
+    "route": "/",
+    "note": "Semantic headings and controls, visible focus, skip link, dialogs and keyboard alternatives accompany visual interactions. This is not an exhaustive accessibility certification.",
+    "status": "Adapted"
+  },
+  {
+    "id": 265,
+    "name": "Screen-reader-friendly semantic design",
+    "route": "/",
+    "note": "Semantic headings and controls, visible focus, skip link, dialogs and keyboard alternatives accompany visual interactions. This is not an exhaustive accessibility certification.",
+    "status": "Adapted"
+  },
+  {
+    "id": 266,
+    "name": "High contrast mode",
+    "route": "/",
+    "note": "Tune experience offers high contrast; global motion preferences and responsive typography are supported.",
+    "status": "Implemented"
+  },
+  {
+    "id": 267,
+    "name": "Reduced motion mode",
+    "route": "/",
+    "note": "Tune experience offers high contrast; global motion preferences and responsive typography are supported.",
+    "status": "Implemented"
+  },
+  {
+    "id": 268,
+    "name": "Responsive typography",
+    "route": "/",
+    "note": "Tune experience offers high contrast; global motion preferences and responsive typography are supported.",
+    "status": "Implemented"
+  },
+  {
+    "id": 269,
+    "name": "Perfect mobile animations",
+    "route": "/performance",
+    "note": "Responsive behavior and measured frame callbacks are provided. \u201cPerfect\u201d animation or a universal 60/120 FPS guarantee cannot be promised.",
+    "status": "Not guaranteed"
+  },
+  {
+    "id": 270,
+    "name": "Touch-specific interactions",
+    "route": "/",
+    "note": "Pointer interactions and pressed-state visual feedback work on touch controls; no physical vibration is claimed.",
+    "status": "Implemented"
+  },
+  {
+    "id": 271,
+    "name": "Swipeable project cards",
+    "route": "/motion",
+    "note": "Touch scrolling and snap points let visitors swipe the project gallery. General browser back/forward gestures are left to the browser.",
+    "status": "Adapted"
+  },
+  {
+    "id": 272,
+    "name": "Mobile haptic-style visual feedback",
+    "route": "/",
+    "note": "Pointer interactions and pressed-state visual feedback work on touch controls; no physical vibration is claimed.",
+    "status": "Implemented"
+  },
+  {
+    "id": 273,
+    "name": "Skeleton loading animations",
+    "route": "/",
+    "note": "Scene-specific loading indicators appear while heavy visual modules load; full skeleton screen layouts were not added.",
+    "status": "Adapted"
+  },
+  {
+    "id": 274,
+    "name": "Lazy-loaded media",
+    "route": "/",
+    "note": "Lazy media/scenes, capped rendering pixel ratio, reduced motion and off-screen scene pausing.",
+    "status": "Implemented"
+  },
+  {
+    "id": 275,
+    "name": "Optimized WebGL",
+    "route": "/",
+    "note": "Lazy media/scenes, capped rendering pixel ratio, reduced motion and off-screen scene pausing.",
+    "status": "Implemented"
+  },
+  {
+    "id": 276,
+    "name": "60/120 FPS animations",
+    "route": "/performance",
+    "note": "Responsive behavior and measured frame callbacks are provided. \u201cPerfect\u201d animation or a universal 60/120 FPS guarantee cannot be promised.",
+    "status": "Not guaranteed"
+  },
+  {
+    "id": 277,
+    "name": "Preloaded transitions",
+    "route": "/",
+    "note": "Framework navigation can preload route code; transitions are not all manually preloaded.",
+    "status": "Adapted"
+  },
+  {
+    "id": 278,
+    "name": "Image optimization",
+    "route": "/work",
+    "note": "Existing local assets use lazy loading and fixed presentation dimensions; no universal image-transcoding service was added.",
+    "status": "Adapted"
+  },
+  {
+    "id": 279,
+    "name": "Progressive enhancement",
+    "route": "/",
+    "note": "Server-rendered content and explicit browser/hardware capability fallbacks provide progressive enhancement.",
+    "status": "Implemented"
+  },
+  {
+    "id": 280,
+    "name": "Custom Open Graph previews",
+    "route": "/",
+    "note": "Existing custom portfolio Open Graph artwork is retained, with corrected canonical site origin.",
+    "status": "Implemented"
+  },
+  {
+    "id": 281,
+    "name": "Animated social sharing cards",
+    "route": "/share",
+    "note": "Animated in-site sharing card is available; social platforms generally render the static Open Graph image.",
+    "status": "Adapted"
+  },
+  {
+    "id": 282,
+    "name": "Dynamic metadata for every project",
+    "route": "/work/portfolio-optimizer",
+    "note": "Project title, description and Open Graph/X metadata derive from the selected record; unsupported project images are omitted.",
+    "status": "Implemented"
+  },
+  {
+    "id": 283,
+    "name": "Personal favicon animation",
+    "route": "/",
+    "note": "Tune experience offers opt-in animated tab titles and alternating TP favicon colors; reduced motion pauses them.",
+    "status": "Implemented"
+  },
+  {
+    "id": 284,
+    "name": "Custom browser tab title animations",
+    "route": "/",
+    "note": "Tune experience offers opt-in animated tab titles and alternating TP favicon colors; reduced motion pauses them.",
+    "status": "Implemented"
+  },
+  {
+    "id": 285,
+    "name": "Hidden details in source code for developers",
+    "route": "/",
+    "note": "Source includes implementation notes and the existing browser-console keyboard easter-egg message.",
+    "status": "Implemented"
+  },
+  {
+    "id": 286,
+    "name": "Console easter egg",
+    "route": "/",
+    "note": "Source includes implementation notes and the existing browser-console keyboard easter-egg message.",
+    "status": "Implemented"
+  },
+  {
+    "id": 287,
+    "name": "Konami-code easter egg",
+    "route": "/secret",
+    "note": "Konami sequence opens the secret room, with a form-input guard.",
+    "status": "Implemented"
+  },
+  {
+    "id": 288,
+    "name": "Secret /lab page",
+    "route": "/archive",
+    "note": "Lab, terminal and archive routes are reachable as side paths; research tools are discoverable rather than concealed.",
+    "status": "Adapted"
+  },
+  {
+    "id": 289,
+    "name": "Secret /terminal page",
+    "route": "/archive",
+    "note": "Lab, terminal and archive routes are reachable as side paths; research tools are discoverable rather than concealed.",
+    "status": "Adapted"
+  },
+  {
+    "id": 290,
+    "name": "Secret /archive page",
+    "route": "/archive",
+    "note": "Lab, terminal and archive routes are reachable as side paths; research tools are discoverable rather than concealed.",
+    "status": "Adapted"
+  },
+  {
+    "id": 291,
+    "name": "Interactive site map",
+    "route": "/sitemap",
+    "note": "Interactive route index lists the portfolio\u2019s main destinations.",
+    "status": "Implemented"
+  },
+  {
+    "id": 292,
+    "name": "\"Random project\" button",
+    "route": "/explore",
+    "note": "Random-project, Surprise me and side-by-side project comparison controls.",
+    "status": "Implemented"
+  },
+  {
+    "id": 293,
+    "name": "\"Surprise me\" button",
+    "route": "/explore",
+    "note": "Random-project, Surprise me and side-by-side project comparison controls.",
+    "status": "Implemented"
+  },
+  {
+    "id": 294,
+    "name": "Project comparisons",
+    "route": "/explore",
+    "note": "Random-project, Surprise me and side-by-side project comparison controls.",
+    "status": "Implemented"
+  },
+  {
+    "id": 295,
+    "name": "Bookmark/save favorite projects locally",
+    "route": "/explore",
+    "note": "Save on a case study; local bookmarks appear in the Explore shortlist.",
+    "status": "Implemented"
+  },
+  {
+    "id": 296,
+    "name": "Share individual project sections",
+    "route": "/journal",
+    "note": "Each journal note has a shareable anchor; case studies retain copy-link controls.",
+    "status": "Implemented"
+  },
+  {
+    "id": 297,
+    "name": "QR code to your portfolio",
+    "route": "/explore",
+    "note": "A QR code is generated from the current portfolio origin.",
+    "status": "Implemented"
+  },
+  {
+    "id": 298,
+    "name": "Contact form with animated completion",
+    "route": "/contact",
+    "note": "Validated form prepares a mailto draft with an animated confirmation. Delivery happens only after the visitor sends it in their mail app.",
+    "status": "Adapted"
+  },
+  {
+    "id": 299,
+    "name": "Copy-email animation",
+    "route": "/contact",
+    "note": "Copy-email feedback, expandable GitHub preview and the documented availability statement.",
+    "status": "Implemented"
+  },
+  {
+    "id": 300,
+    "name": "Social links with interactive previews",
+    "route": "/contact",
+    "note": "Copy-email feedback, expandable GitHub preview and the documented availability statement.",
+    "status": "Implemented"
+  },
+  {
+    "id": 301,
+    "name": "Availability/status indicator",
+    "route": "/contact",
+    "note": "Copy-email feedback, expandable GitHub preview and the documented availability statement.",
+    "status": "Implemented"
+  },
+  {
+    "id": 302,
+    "name": "Interactive footer",
+    "route": "/motion",
+    "note": "The motion lab\u2019s final connection sequence and achievement provide a signature finale; the global footer links into the same experience.",
+    "status": "Adapted"
+  },
+  {
+    "id": 303,
+    "name": "Footer that becomes another experience instead of just links",
+    "route": "/motion",
+    "note": "The motion lab\u2019s final connection sequence and achievement provide a signature finale; the global footer links into the same experience.",
+    "status": "Adapted"
+  },
+  {
+    "id": 304,
+    "name": "End-of-site cinematic sequence",
+    "route": "/motion",
+    "note": "The motion lab\u2019s final connection sequence and achievement provide a signature finale; the global footer links into the same experience.",
+    "status": "Adapted"
+  },
+  {
+    "id": 305,
+    "name": "\"You reached the end\" achievement",
+    "route": "/",
+    "note": "Reaching the footer unlocks the local end-of-site achievement.",
+    "status": "Implemented"
+  },
+  {
+    "id": 306,
+    "name": "Website stats page showing visitors, countries, project views, etc.",
+    "route": "/stats",
+    "note": "D1-backed consenting visitor, country and page-view counts. Starts empty rather than fabricating historical traffic.",
+    "status": "Implemented"
+  },
+  {
+    "id": 307,
+    "name": "Dynamic visitor counter",
+    "route": "/stats",
+    "note": "D1-backed consenting visitor, country and page-view counts. Starts empty rather than fabricating historical traffic.",
+    "status": "Implemented"
+  },
+  {
+    "id": 308,
+    "name": "World map of portfolio visitors",
+    "route": "/stats",
+    "note": "Country counts appear in a geographic signal panel; unknown or unmapped countries remain in the table.",
+    "status": "Adapted"
+  },
+  {
+    "id": 309,
+    "name": "Personalized greeting based on local time",
+    "route": "/explore",
+    "note": "Local-time and returning-visitor greetings use device-local state.",
+    "status": "Implemented"
+  },
+  {
+    "id": 310,
+    "name": "Returning-visitor greeting",
+    "route": "/explore",
+    "note": "Local-time and returning-visitor greetings use device-local state.",
+    "status": "Implemented"
+  },
+  {
+    "id": 311,
+    "name": "Remember visitor theme preferences",
+    "route": "/",
+    "note": "Theme and reading-mode preferences persist; route scroll positions are restored within the session.",
+    "status": "Implemented"
+  },
+  {
+    "id": 312,
+    "name": "Smooth state preservation when returning to pages",
+    "route": "/",
+    "note": "Theme and reading-mode preferences persist; route scroll positions are restored within the session.",
+    "status": "Implemented"
+  },
+  {
+    "id": 313,
+    "name": "PWA support so the portfolio can be installed like an app",
+    "route": "/",
+    "note": "Install manifest and service worker provide an offline essential-profile page and cached r\u00e9sum\u00e9; interactive network features need connectivity.",
+    "status": "Adapted"
+  },
+  {
+    "id": 314,
+    "name": "Offline version",
+    "route": "/",
+    "note": "Install manifest and service worker provide an offline essential-profile page and cached r\u00e9sum\u00e9; interactive network features need connectivity.",
+    "status": "Adapted"
+  },
+  {
+    "id": 315,
+    "name": "Performance mode for weaker devices",
+    "route": "/",
+    "note": "Performance mode reduces visual motion and expensive overlays; it also activates the site\u2019s reduced-motion setting.",
+    "status": "Implemented"
+  },
+  {
+    "id": 316,
+    "name": "Desktop-only enhanced visual mode",
+    "route": "/",
+    "note": "Desktop receives richer cursor, horizontal scrolling and draggable-window treatments; small screens use simpler layouts.",
+    "status": "Implemented"
+  },
+  {
+    "id": 317,
+    "name": "WebGPU/WebGL experimental section",
+    "route": "/devices",
+    "note": "Actual WebGPU compute squares four numbers when supported; WebGL scenes remain elsewhere.",
+    "status": "Implemented"
+  },
+  {
+    "id": 318,
+    "name": "AR project showcase",
+    "route": "/devices",
+    "note": "Opt-in WebXR AR displays a procedural project cube on compatible devices; no scanned project model was supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 319,
+    "name": "Interactive holographic-style cards",
+    "route": "/devices",
+    "note": "Holographic camera styling and perspective TP sculpture demonstrate the visual treatment.",
+    "status": "Adapted"
+  },
+  {
+    "id": 320,
+    "name": "Webcam-controlled effects with permission",
+    "route": "/devices",
+    "note": "Opt-in local camera preview receives a holographic filter. It is not gesture tracking; recording/upload are not implemented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 321,
+    "name": "Device-tilt effects on mobile",
+    "route": "/devices",
+    "note": "Permission-gated device orientation tilts a CSS perspective sculpture. This is not a Three.js gyroscope scene.",
+    "status": "Adapted"
+  },
+  {
+    "id": 322,
+    "name": "Gyroscope-controlled 3D objects",
+    "route": "/devices",
+    "note": "Permission-gated device orientation tilts a CSS perspective sculpture. This is not a Three.js gyroscope scene.",
+    "status": "Adapted"
+  },
+  {
+    "id": 323,
+    "name": "Mouse-speed-responsive animations",
+    "route": "/motion",
+    "note": "Pointer speed controls whether image/type trails are emitted.",
+    "status": "Implemented"
+  },
+  {
+    "id": 324,
+    "name": "Scroll-speed-responsive typography",
+    "route": "/motion",
+    "note": "Scroll velocity drives type skew and blur in the motion lab.",
+    "status": "Implemented"
+  },
+  {
+    "id": 325,
+    "name": "Dynamic blur based on scroll velocity",
+    "route": "/motion",
+    "note": "Scroll velocity drives type skew and blur in the motion lab.",
+    "status": "Implemented"
+  },
+  {
+    "id": 326,
+    "name": "Elastic overscroll effects",
+    "route": "/motion",
+    "note": "An elastic drag panel demonstrates resistance and spring-back; native browser-edge behavior is unchanged.",
+    "status": "Adapted"
+  },
+  {
+    "id": 327,
+    "name": "Morphing blobs",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 328,
+    "name": "Liquid buttons",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 329,
+    "name": "Animated borders",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 330,
+    "name": "Gradient borders that follow cursor",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 331,
+    "name": "Buttons with ripple effects",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 332,
+    "name": "Buttons with particle explosions",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 333,
+    "name": "Hover-based text replacement",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 334,
+    "name": "Icon morphing",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 335,
+    "name": "Microinteractions on every important click",
+    "route": "/",
+    "note": "Primary controls provide pressed/focus/loading/status feedback. \u201cEvery click\u201d is a design aim rather than an exhaustive guarantee.",
+    "status": "Adapted"
+  },
+  {
+    "id": 336,
+    "name": "Custom checkbox/toggle animations",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 337,
+    "name": "Animated tooltips",
+    "route": "/motion",
+    "note": "Morphing blob, liquid hover button, pointer-lit panel borders, ripple and particle buttons, replacement text, icon motion, custom toggle and focusable tooltips.",
+    "status": "Implemented"
+  },
+  {
+    "id": 338,
+    "name": "Context menus styled specifically for the portfolio",
+    "route": "/",
+    "note": "Custom reaction context menu remains on ordinary page content; native menus remain on links, inputs and canvases.",
+    "status": "Implemented"
+  },
+  {
+    "id": 339,
+    "name": "Drag-to-explore interfaces",
+    "route": "/desktop",
+    "note": "Draggable windows plus graph panning and 3D orbit/drag interactions.",
+    "status": "Implemented"
+  },
+  {
+    "id": 340,
+    "name": "Click-and-hold interactions",
+    "route": "/motion",
+    "note": "Press-and-hold reveals a local achievement; an Enter alternative supports keyboard use.",
+    "status": "Implemented"
+  },
+  {
+    "id": 341,
+    "name": "Long-press mobile easter eggs",
+    "route": "/motion",
+    "note": "Press-and-hold reveals a local achievement; an Enter alternative supports keyboard use.",
+    "status": "Implemented"
+  },
+  {
+    "id": 342,
+    "name": "Cursor-controlled camera movement",
+    "route": "/world",
+    "note": "Pointer orbit, project-card tilt and layered scroll parallax remain; camera movement is drag-controlled.",
+    "status": "Adapted"
+  },
+  {
+    "id": 343,
+    "name": "Perspective changes based on mouse position",
+    "route": "/world",
+    "note": "Pointer orbit, project-card tilt and layered scroll parallax remain; camera movement is drag-controlled.",
+    "status": "Adapted"
+  },
+  {
+    "id": 344,
+    "name": "Multi-layer parallax",
+    "route": "/world",
+    "note": "Pointer orbit, project-card tilt and layered scroll parallax remain; camera movement is drag-controlled.",
+    "status": "Adapted"
+  },
+  {
+    "id": 345,
+    "name": "Cinematic motion blur",
+    "route": "/motion",
+    "note": "Velocity-driven CSS blur simulates a cinematic effect; renderer-level motion vectors are not implemented.",
+    "status": "Adapted"
+  },
+  {
+    "id": 346,
+    "name": "Scroll velocity skew",
+    "route": "/motion",
+    "note": "Scroll velocity drives type skew and blur in the motion lab.",
+    "status": "Implemented"
+  },
+  {
+    "id": 347,
+    "name": "Image trails during fast cursor movement",
+    "route": "/motion",
+    "note": "Fast-pointer canvas trails alternate conceptual project images and mathematical typography.",
+    "status": "Implemented"
+  },
+  {
+    "id": 348,
+    "name": "Typography trails",
+    "route": "/motion",
+    "note": "Fast-pointer canvas trails alternate conceptual project images and mathematical typography.",
+    "status": "Implemented"
+  },
+  {
+    "id": 349,
+    "name": "Infinite scrolling visual galleries",
+    "route": "/motion",
+    "note": "A repeated, swipeable project gallery provides continuous browsing; it is finite repeated content rather than an unbounded feed.",
+    "status": "Adapted"
+  },
+  {
+    "id": 350,
+    "name": "Image stacks that spread on hover",
+    "route": "/motion",
+    "note": "Hovering spreads an image stack; project cards scatter/gather and filters use FLIP position animation.",
+    "status": "Implemented"
+  },
+  {
+    "id": 351,
+    "name": "Project cards that scatter and reorganize",
+    "route": "/motion",
+    "note": "Hovering spreads an image stack; project cards scatter/gather and filters use FLIP position animation.",
+    "status": "Implemented"
+  },
+  {
+    "id": 352,
+    "name": "Filter animations that physically rearrange cards",
+    "route": "/motion",
+    "note": "Hovering spreads an image stack; project cards scatter/gather and filters use FLIP position animation.",
+    "status": "Implemented"
+  },
+  {
+    "id": 353,
+    "name": "Portfolio \"operating system\" interface",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 354,
+    "name": "Desktop-style draggable windows",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 355,
+    "name": "Fake apps for Projects / Resume / Research / Awards",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 356,
+    "name": "Window minimizing/maximizing",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 357,
+    "name": "Dock interface",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 358,
+    "name": "Desktop notifications showing achievements",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 359,
+    "name": "Spotlight search",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 360,
+    "name": "File-explorer-style project browser",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 361,
+    "name": "Terminal app",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 362,
+    "name": "Notes app containing your thoughts/research",
+    "route": "/desktop",
+    "note": "Portfolio OS: draggable, minimizable/maximizable windows, dock, project explorer, r\u00e9sum\u00e9, research, awards, terminal, notes and Spotlight. Existing achievements use in-site notifications.",
+    "status": "Implemented"
+  },
+  {
+    "id": 363,
+    "name": "Interactive calendar of achievements",
+    "route": "/desktop",
+    "note": "Calendar uses the known note-publication date; undated personal awards are not assigned invented dates.",
+    "status": "Adapted"
+  },
+  {
+    "id": 364,
+    "name": "Git-style timeline of your development",
+    "route": "/desktop",
+    "note": "Git-like Tanish v1/v2/v3 timeline describes website evolution, not a fictional personal chronology.",
+    "status": "Adapted"
+  },
+  {
+    "id": 365,
+    "name": "\"Version history of me\" concept",
+    "route": "/desktop",
+    "note": "Git-like Tanish v1/v2/v3 timeline describes website evolution, not a fictional personal chronology.",
+    "status": "Adapted"
+  },
+  {
+    "id": 366,
+    "name": "Tanish v1.0 \u2192 v2.0 \u2192 v3.0",
+    "route": "/desktop",
+    "note": "Git-like Tanish v1/v2/v3 timeline describes website evolution, not a fictional personal chronology.",
+    "status": "Adapted"
+  },
+  {
+    "id": 367,
+    "name": "Annual changelog",
+    "route": "/desktop",
+    "note": "Website version notes are provided. Repository-specific annual release histories were not supplied.",
+    "status": "Adapted"
+  },
+  {
+    "id": 368,
+    "name": "Personal API page",
+    "route": "/architecture",
+    "note": "Personal JSON API with projects, skills and experience endpoints, plus developer-mode links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 369,
+    "name": "JSON-style portfolio mode",
+    "route": "/architecture",
+    "note": "Personal JSON API with projects, skills and experience endpoints, plus developer-mode links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 370,
+    "name": "Developer API returning your projects",
+    "route": "/architecture",
+    "note": "Personal JSON API with projects, skills and experience endpoints, plus developer-mode links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 371,
+    "name": "/api/projects",
+    "route": "/architecture",
+    "note": "Personal JSON API with projects, skills and experience endpoints, plus developer-mode links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 372,
+    "name": "/api/skills",
+    "route": "/architecture",
+    "note": "Personal JSON API with projects, skills and experience endpoints, plus developer-mode links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 373,
+    "name": "/api/experience",
+    "route": "/architecture",
+    "note": "Personal JSON API with projects, skills and experience endpoints, plus developer-mode links.",
+    "status": "Implemented"
+  },
+  {
+    "id": 374,
+    "name": "Live playground demonstrating your code",
+    "route": "/algorithms",
+    "note": "Working bubble-sort steps, stack operations, gradient-descent linear model, on-demand Pyodide numeric statistics and a compiled WebAssembly adder.",
+    "status": "Implemented"
+  },
+  {
+    "id": 375,
+    "name": "Interactive algorithm visualizations",
+    "route": "/algorithms",
+    "note": "Working bubble-sort steps, stack operations, gradient-descent linear model, on-demand Pyodide numeric statistics and a compiled WebAssembly adder.",
+    "status": "Implemented"
+  },
+  {
+    "id": 376,
+    "name": "Interactive data-structure visualizations",
+    "route": "/algorithms",
+    "note": "Working bubble-sort steps, stack operations, gradient-descent linear model, on-demand Pyodide numeric statistics and a compiled WebAssembly adder.",
+    "status": "Implemented"
+  },
+  {
+    "id": 377,
+    "name": "AI/ML model playgrounds",
+    "route": "/algorithms",
+    "note": "Working bubble-sort steps, stack operations, gradient-descent linear model, on-demand Pyodide numeric statistics and a compiled WebAssembly adder.",
+    "status": "Implemented"
+  },
+  {
+    "id": 378,
+    "name": "Real-time Python-powered demos",
+    "route": "/algorithms",
+    "note": "Working bubble-sort steps, stack operations, gradient-descent linear model, on-demand Pyodide numeric statistics and a compiled WebAssembly adder.",
+    "status": "Implemented"
+  },
+  {
+    "id": 379,
+    "name": "WebAssembly experiments",
+    "route": "/algorithms",
+    "note": "Working bubble-sort steps, stack operations, gradient-descent linear model, on-demand Pyodide numeric statistics and a compiled WebAssembly adder.",
+    "status": "Implemented"
+  },
+  {
+    "id": 380,
+    "name": "Collaborative easter egg where visitors leave anonymous particles/messages",
+    "route": "/community",
+    "note": "Shared D1 guestbook and selectable particle messages, validated input and daily posting limits.",
+    "status": "Implemented"
+  },
+  {
+    "id": 381,
+    "name": "Digital guestbook",
+    "route": "/community",
+    "note": "Shared D1 guestbook and selectable particle messages, validated input and daily posting limits.",
+    "status": "Implemented"
+  },
+  {
+    "id": 382,
+    "name": "Interactive recommendation/testimonial wall",
+    "route": "/community",
+    "note": "Shared visitor feedback is clearly unverified; it is not presented as a professional endorsement.",
+    "status": "Adapted"
+  },
+  {
+    "id": 383,
+    "name": "Letters of recommendation section",
+    "route": "/community",
+    "note": "Approved recommendation letters and collaborator identities/relationships/dates were not supplied. No endorsements or private connections were invented.",
+    "status": "Needs your facts"
+  },
+  {
+    "id": 384,
+    "name": "Testimonial cards with cinematic reveals",
+    "route": "/community",
+    "note": "Shared visitor feedback is clearly unverified; it is not presented as a professional endorsement.",
+    "status": "Adapted"
+  },
+  {
+    "id": 385,
+    "name": "\"People I've worked with\" network",
+    "route": "/community",
+    "note": "Approved recommendation letters and collaborator identities/relationships/dates were not supplied. No endorsements or private connections were invented.",
+    "status": "Needs your facts"
+  },
+  {
+    "id": 386,
+    "name": "Timeline connecting collaborators to projects",
+    "route": "/community",
+    "note": "Approved recommendation letters and collaborator identities/relationships/dates were not supplied. No endorsements or private connections were invented.",
+    "status": "Needs your facts"
+  },
+  {
+    "id": 387,
+    "name": "Visual storytelling instead of standard resume sections",
+    "route": "/",
+    "note": "The main story is now math, finance and computer science, with distinct quant, algorithm, graph and keyboard mechanics and a consistent motion palette.",
+    "status": "Adapted"
+  },
+  {
+    "id": 388,
+    "name": "Every major section having its own interaction mechanic",
+    "route": "/",
+    "note": "The main story is now math, finance and computer science, with distinct quant, algorithm, graph and keyboard mechanics and a consistent motion palette.",
+    "status": "Adapted"
+  },
+  {
+    "id": 389,
+    "name": "Consistent motion language throughout the site",
+    "route": "/",
+    "note": "The main story is now math, finance and computer science, with distinct quant, algorithm, graph and keyboard mechanics and a consistent motion palette.",
+    "status": "Adapted"
+  },
+  {
+    "id": 390,
+    "name": "Animation choreography instead of random animations",
+    "route": "/",
+    "note": "The main story is now math, finance and computer science, with distinct quant, algorithm, graph and keyboard mechanics and a consistent motion palette.",
+    "status": "Adapted"
+  },
+  {
+    "id": 391,
+    "name": "Motion tied directly to your story",
+    "route": "/",
+    "note": "The main story is now math, finance and computer science, with distinct quant, algorithm, graph and keyboard mechanics and a consistent motion palette.",
+    "status": "Adapted"
+  },
+  {
+    "id": 392,
+    "name": "A final signature interaction unique enough that visitors immediately remember your portfolio",
+    "route": "/motion",
+    "note": "The motion lab\u2019s final connection sequence and achievement provide a signature finale; the global footer links into the same experience.",
+    "status": "Adapted"
+  }
+]

@@ -1,0 +1,8 @@
+export type Shot={x:number;y:number;z:number;vx:number;vy:number;vz:number;scored:boolean;finished:boolean;age?:number;bounces?:number};
+export function launchShot(power:number,aim:number,startX=0):Shot{const angle=aim*Math.PI/180;return{x:startX,y:1.4,z:4,vx:Math.sin(angle)*5.8,vy:5.24+power*.043,vz:-Math.cos(angle)*5.8,scored:false,finished:false,age:0,bounces:0}}
+/** Small fixed substeps keep rim/backboard collision stable on slow frames. */
+export function stepShot(s:Shot,dt:number){if(s.finished)return false;const steps=Math.max(1,Math.ceil(Math.min(dt,.12)*120)),h=Math.min(dt,.12)/steps;let basket=false;for(let i=0;i<steps;i++){const before={x:s.x,y:s.y,z:s.z};s.age=(s.age||0)+h;s.vy-=9.81*h;s.x+=s.vx*h;s.y+=s.vy*h;s.z+=s.vz*h;
+ if(!s.scored&&before.y>2.9&&s.y<=2.9&&s.vy<0){const f=(before.y-2.9)/(before.y-s.y),x=before.x+(s.x-before.x)*f,z=before.z+(s.z-before.z)*f;if(Math.hypot(x,z+4.25)<.23){s.scored=true;basket=true}}
+ if(s.vz<0&&before.z> -4.55&&s.z<=-4.55&&Math.abs(s.x)<1.35&&s.y>2.4&&s.y<4.3){s.z=-4.55;s.vz=-s.vz*.72;s.vx*=.9}
+ const dx=s.x,dz=s.z+4.25,radial=Math.hypot(dx,dz);if(!s.scored&&radial>.001){const qx=dx/radial*.5,qz=dz/radial*.5,nx=dx-qx,ny=s.y-2.9,nz=dz-qz,d=Math.hypot(nx,ny,nz),radius=.28+.045;if(d<radius&&d>.001){const ux=nx/d,uy=ny/d,uz=nz/d,v=s.vx*ux+s.vy*uy+s.vz*uz;if(v<0){s.vx-=1.65*v*ux;s.vy-=1.65*v*uy;s.vz-=1.65*v*uz}s.x+=ux*(radius-d);s.y+=uy*(radius-d);s.z+=uz*(radius-d)}}
+ if(s.y<.28&&s.vy<0){s.y=.28;s.vy=-s.vy*.56;s.vx*=.72;s.vz*=.72;s.bounces=(s.bounces||0)+1}s.finished=(s.age||0)>7||(s.bounces||0)>3||s.z<-8||Math.abs(s.x)>7;if(s.finished)break}return basket}

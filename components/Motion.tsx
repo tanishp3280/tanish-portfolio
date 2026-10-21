@@ -1,0 +1,17 @@
+'use client';
+import {useEffect,useRef,useState} from 'react';
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {useSettings} from './Shell';
+gsap.registerPlugin(ScrollTrigger);
+export function MotionDirector(){const {reduced}=useSettings();useEffect(()=>{if(reduced)return;const ctx=gsap.context(()=>{
+ gsap.utils.toArray<HTMLElement>('[data-parallax]').forEach(el=>gsap.fromTo(el,{yPercent:-8},{yPercent:12,ease:'none',scrollTrigger:{trigger:el,start:'top bottom',end:'bottom top',scrub:1}}));
+ gsap.utils.toArray<HTMLElement>('[data-text-reveal]').forEach(el=>gsap.fromTo(el.children,{opacity:.12,y:30},{opacity:1,y:0,stagger:.08,scrollTrigger:{trigger:el,start:'top 85%',end:'bottom 40%',scrub:1}}));
+ gsap.utils.toArray<HTMLElement>('[data-image-reveal]').forEach(el=>gsap.fromTo(el,{clipPath:'inset(15% 0 15% 0 round 60px)',scale:.9},{clipPath:'inset(0% 0 0% 0 round 24px)',scale:1,scrollTrigger:{trigger:el,start:'top 90%',end:'top 30%',scrub:1}}));
+ gsap.utils.toArray<HTMLElement>('[data-stretch]').forEach(el=>gsap.fromTo(el,{scaleX:.88},{scaleX:1.07,transformOrigin:'left',scrollTrigger:{trigger:el,start:'top bottom',end:'bottom top',scrub:1}}));
+ const rail=document.querySelector<HTMLElement>('.story-rail'),stage=document.querySelector<HTMLElement>('.story-stage');if(rail&&stage&&innerWidth>800)gsap.to(rail,{x:()=>-(rail.scrollWidth-stage.clientWidth),ease:'none',scrollTrigger:{trigger:stage,start:'top 12%',end:()=>'+='+Math.max(600,rail.scrollWidth-stage.clientWidth),pin:true,scrub:1,invalidateOnRefresh:true}});
+ const exp=document.querySelector('.expanding-world');if(exp)gsap.fromTo(exp,{scale:.86,borderRadius:100},{scale:1,borderRadius:24,scrollTrigger:{trigger:exp,start:'top bottom',end:'top 20%',scrub:1}});
+ gsap.utils.toArray<HTMLElement>('[data-tone]').forEach(el=>gsap.fromTo(el,{backgroundColor:'#161a19',color:'#f1f2ed'},{backgroundColor:el.dataset.tone,color:'#17201a',scrollTrigger:{trigger:el,start:'top 80%',end:'top 25%',scrub:1}}));
+ });const t=setTimeout(()=>ScrollTrigger.refresh(),1800);return()=>{clearTimeout(t);ctx.revert()}},[reduced]);return null}
+export function Counter({value,prefix='',suffix=''}:{value:number;prefix?:string;suffix?:string}){const ref=useRef<HTMLElement>(null);const {reduced}=useSettings();useEffect(()=>{const el=ref.current;if(!el)return;if(reduced){el.textContent=prefix+value.toLocaleString()+suffix;return}const obj={n:0};let t:gsap.core.Tween|undefined;const io=new IntersectionObserver(([e])=>{if(e.isIntersecting){io.disconnect();t=gsap.to(obj,{n:value,duration:1.5,ease:'power2.out',onUpdate:()=>{el.textContent=prefix+Math.round(obj.n).toLocaleString()+suffix}})}},{threshold:.5});io.observe(el);return()=>{io.disconnect();t?.kill()}},[value,reduced,prefix,suffix]);return <strong ref={ref}>{prefix}{value.toLocaleString()}{suffix}</strong>}
+export function Scramble({text}:{text:string}){const [value,setValue]=useState(text);const timer=useRef<ReturnType<typeof setInterval>|null>(null);const {reduced}=useSettings();useEffect(()=>()=>{if(timer.current)clearInterval(timer.current)},[]);function run(){if(reduced)return;if(timer.current)clearInterval(timer.current);let n=0;timer.current=setInterval(()=>{n+=.7;setValue(text.split('').map((c,i)=>i<n?c:'01<>/✳'[Math.floor(Math.random()*6)]).join(''));if(n>=text.length&&timer.current)clearInterval(timer.current)},35)}return <span onPointerEnter={run} onFocus={run} tabIndex={0} aria-label={text}>{value}</span>}

@@ -1,0 +1,1 @@
+import {skills} from '@/lib/data';import {catalog,relatedTo} from '@/lib/catalog';export function GET(){return Response.json({skills:skills.map(name=>({name,projects:catalog.filter(p=>relatedTo(p,name)).map(p=>p.id)}))})}

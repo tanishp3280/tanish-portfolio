@@ -1,0 +1,23 @@
+[
+ {"name":"Original Spline keyboard asset","status":"Reused","where":"/keyboard","detail":"The actual public Spline scene is loaded, rather than a CSS keyboard imitation."},
+ {"name":"Elastic keyboard reveal and falling keycaps","status":"Adapted","where":"/keyboard","detail":"Staggered bounce animation assembles the keycaps on load."},
+ {"name":"Hover and physical-key technology selection","status":"Adapted","where":"/keyboard","detail":"Spline hover/down events select tool names, with form-input guards."},
+ {"name":"Press and release sounds","status":"Adapted","where":"/keyboard","detail":"Original audio files play only when the visitor turns sound on."},
+ {"name":"Scroll-based keyboard choreography","status":"Adapted","where":"/keyboard","detail":"A dedicated sticky scroll tour has hero, skills, projects and contact stages."},
+ {"name":"Bongo Cat","status":"Adapted","where":"/keyboard","detail":"Original two-frame cat animation appears in the projects stage."},
+ {"name":"Floating contact keycaps","status":"Adapted","where":"/keyboard","detail":"Contact stage lifts the keycaps. A manual explode/reassemble control works on the home scene too."},
+ {"name":"Offscreen and hidden-tab pause","status":"Implemented","where":"/keyboard","detail":"Intersection and document-visibility observers pause the Spline scene."},
+ {"name":"Smooth scrolling and magnetic navigation","status":"Implemented","where":"/","detail":"Lenis smooth scrolling and pointer-relative button movement."},
+ {"name":"Project details and responsive views","status":"Adapted","where":"/work","detail":"Expandable index, flip cards, responsive full-page project views and real app previews."},
+ {"name":"Magnifying technology dock","status":"Adapted","where":"/keyboard","detail":"Skill tiles magnify with neighboring tiles on hover and link to documented project filters."},
+ {"name":"Experience and publication content","status":"Replaced with your facts","where":"/journey","detail":"Your supplied experience replaces the reference owner's biography. Research manuscripts are not invented."},
+ {"name":"Résumé drawing overlay","status":"Adapted","where":"/resume","detail":"Five pen colors, draw toggle, clear action, doodle-layer export and clean PDF download."},
+ {"name":"Light/dark themes and reduced motion","status":"Implemented","where":"/","detail":"Remembered device-local preferences with pointer and motion fallbacks."},
+ {"name":"Nyan Cat N shortcut","status":"Reused / adapted","where":"/","detail":"Original cat asset animates across the page; shortcut ignores editable fields."},
+ {"name":"Six-emoji right-click reactions","status":"Adapted","where":"/","detail":"Radial reaction menu on ordinary content; holding a reaction increases the confetti burst."},
+ {"name":"Contact delivery","status":"Adapted","where":"/#contact","detail":"Direct mailto links use your supplied email. No email service has been provisioned, and no message is falsely marked sent."},
+ {"name":"Developer-tools surprise","status":"Adapted","where":"/terminal","detail":"Console greeting and explorable command terminal. No invasive devtools-open detector."},
+ {"name":"Optional Socket.IO chat and presence","status":"Not connected","where":"/features","detail":"The original optional backend was not in its public frontend repository and was not active in the audit. This build does not pretend to have live chat visitors."},
+ {"name":"Original analytics and domain beacon","status":"Excluded","where":"/credits","detail":"The reference owner's tracking IDs and domain beacon are not copied into your portfolio."},
+ {"name":"Colonia Zacamil world","status":"Recreated interaction pattern","where":"/world","detail":"Newly authored neighborhood geometry, orbit/zoom controls, moving cars, trees and explorable pins. The original application bundle and mural artwork are not republished."}
+]

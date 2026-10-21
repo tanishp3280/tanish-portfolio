@@ -1,0 +1,5 @@
+'use client';
+import {useRef,useState} from 'react';
+import {useInView,useReducedMotion} from 'motion/react';
+import {useSettings} from '../Shell';
+export default function TwilightIllustration(){const ref=useRef<HTMLElement>(null),visible=useInView(ref,{margin:'100px'}),os=useReducedMotion(),{reduced}=useSettings(),[paused,setPaused]=useState(false);const moving=visible&&!os&&!reduced&&!paused;return <figure id="twilight-study" ref={ref} className="twilight-illustration" data-moving={moving}><div className="twilight-window"><img src="/art/sakura-river.png" width="1280" height="620" loading="lazy" decoding="async" alt="Pixel-art riverside city beneath a cherry blossom tree, with a pale sky and a soft coral sun."/><div className="twilight-lantern" aria-hidden="true"/><div className="twilight-petals" aria-hidden="true">{Array.from({length:14},(_,i)=><i key={i} style={{left:`${(i*37)%100}%`,animationDelay:`-${i*1.3}s`,animationDuration:`${14+i%5*3}s`}}/>)}</div></div><figcaption><span>A new season of ideas.</span><button onClick={()=>setPaused(v=>!v)} aria-pressed={paused}>{paused?'Play scene':'Pause scene'}</button></figcaption></figure>}

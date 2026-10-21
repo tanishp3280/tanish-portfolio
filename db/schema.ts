@@ -1,0 +1,3 @@
+import {sqliteTable,text,integer,index} from 'drizzle-orm/sqlite-core';
+export const guestbook=sqliteTable('guestbook',{id:text('id').primaryKey(),name:text('name').notNull(),message:text('message').notNull(),kind:text('kind').notNull(),createdAt:integer('created_at').notNull(),rateKey:text('rate_key').notNull()},t=>[index('guestbook_created').on(t.createdAt),index('guestbook_rate').on(t.rateKey,t.createdAt)]);
+export const visits=sqliteTable('visits',{id:text('id').primaryKey(),visitor:text('visitor').notNull(),country:text('country').notNull(),page:text('page').notNull(),createdAt:integer('created_at').notNull()},t=>[index('visits_created').on(t.createdAt),index('visits_visitor').on(t.visitor)]);

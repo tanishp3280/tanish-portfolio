@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {futures,portfolio,greeks,regimes,backtest,training,correlation} from '../lib/city/models.ts';
+import {launchShot,stepShot} from '../lib/play/basketball.ts';
+test('Monte Carlo uses deterministic positive paths',()=>{assert.deepEqual(futures(),futures());assert(futures().flat().every(v=>v>0))});
+test('portfolio allocations remain nonnegative and fully invested',()=>{for(const risk of [0,.25,.5,.75,1]){const p=portfolio(risk);assert(Math.abs(p.weights.reduce((a,b)=>a+b,0)-1)<1e-10);assert(p.weights.every(x=>x>=-1e-10));assert(p.volatility>0)}});
+test('call price and delta match benchmark and finite differences',()=>{const g=greeks(100,100,1,.2,.05);assert(Math.abs(g.price-10.4506)<.001);assert(Math.abs(g.delta-.63683)<.001);const h=.01;const fd=(greeks(100+h,100,1,.2,.05).price-greeks(100-h,100,1,.2,.05).price)/(2*h);assert(Math.abs(fd-g.delta)<1e-4)});
+test('HMM normalizes and larger shocks favour high volatility',()=>{assert(regimes(0)[0]>regimes(.07)[0]);assert(Math.abs(regimes(.01).reduce((a,b)=>a+b,0)-1)<1e-12)});
+test('transaction costs reduce the same seeded backtest return',()=>assert(backtest(.01).total<backtest(0).total));
+test('gradient descent reduces mean squared error',()=>assert(training(.1).at(-1)!.error<training(.1)[0].error));
+test('correlation recognizes identical standardized directions',()=>assert.equal(correlation([1,2,3],[2,4,6]),1));
+test('default basketball shot scores once at 30, 60 and 120 FPS',()=>{for(const dt of [1/30,1/60,1/120]){const s=launchShot(65,0);let n=0,hits=0;while(!s.finished&&n++<2000)hits+=Number(stepShot(s,dt));assert(s.finished);assert.equal(hits,1)}});
+test('backboard collision reverses forward velocity',()=>{const s={...launchShot(60,0),x:0,y:3.4,z:-4.5,vx:0,vy:0,vz:-5};stepShot(s,.03);assert(s.vz>0)});
